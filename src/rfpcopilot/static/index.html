@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RFP Copilot</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --text: #1b1f24; --muted: #5c6670; --line: #dde1e6; --accent: #2457c5;
+  --accent-text: #ffffff; --ok: #1d7a46; --ok-bg: #e3f4ea; --warn: #8a5a00; --warn-bg: #fdf1d8; --bad: #b42318;
+  --bad-bg: #fde8e6; --info: #2457c5; --info-bg: #e6edfb; --code: #f0f2f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111418; --panel: #1a1e24; --text: #e6e9ed; --muted: #9aa4af; --line: #2c323a; --accent: #6d9bff;
+    --accent-text: #0d1117; --ok: #5fd08f; --ok-bg: #16301f; --warn: #f0c060; --warn-bg: #352a12; --bad: #ff8a80;
+    --bad-bg: #3a1a18; --info: #8fb2ff; --info-bg: #1b2740; --code: #232830;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { background: var(--panel); border-bottom: 1px solid var(--line); padding: 14px 16px; }
+header h1 { margin: 0; font-size: 18px; }
+header p { margin: 2px 0 0; color: var(--muted); }
+main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+button, .btn, select, input[type=text] { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--text);
+  border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+button.primary, .btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+label.upload { border: 1px dashed var(--muted); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+label.upload input { display: none; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.stat b { display: block; font-size: 20px; }
+.stat span { color: var(--muted); font-size: 12px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
+.tabs button.on { background: var(--info-bg); border-color: var(--info); color: var(--info); }
+.row { display: grid; grid-template-columns: 120px 1.1fr 1.6fr 170px; gap: 12px; padding: 10px 12px;
+  border-top: 1px solid var(--line); align-items: start; }
+.row.head { font-weight: 600; color: var(--muted); font-size: 12px; border-top: 0; }
+.row > div { min-width: 0; overflow-wrap: anywhere; }
+.row > div:first-child { overflow-wrap: break-word; }
+.q small, .muted { color: var(--muted); }
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; font-weight: 600; margin: 0 4px 4px 0; white-space: nowrap; }
+.b-ok { background: var(--ok-bg); color: var(--ok); } .b-warn { background: var(--warn-bg); color: var(--warn); }
+.b-bad { background: var(--bad-bg); color: var(--bad); } .b-info { background: var(--info-bg); color: var(--info); }
+.cite { font-size: 11px; background: var(--code); border-radius: 4px; padding: 0 4px; color: var(--muted); cursor: help; }
+details { margin-top: 6px; }
+summary { cursor: pointer; color: var(--accent); }
+.src { border-left: 3px solid var(--line); padding: 4px 8px; margin: 6px 0; font-size: 13px; }
+.src.used { border-color: var(--accent); }
+.src.old { border-color: var(--bad); opacity: .8; }
+textarea { width: 100%; min-height: 90px; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
+.edit-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.flag { color: var(--bad); font-size: 13px; }
+table.matrix { border-collapse: collapse; width: 100%; font-size: 13px; }
+table.matrix td, table.matrix th { border-bottom: 1px solid var(--line); padding: 4px 6px; text-align: right; }
+table.matrix td:first-child, table.matrix th:first-child { text-align: left; }
+.empty { color: var(--muted); padding: 24px; text-align: center; }
+#toast { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 420px; margin: 0 auto; background: var(--text); color: var(--bg);
+  padding: 8px 12px; border-radius: 6px; display: none; }
+@media (max-width: 760px) {
+  .row { grid-template-columns: 1fr; gap: 4px; }
+  .row.head { display: none; }
+  .wide-only { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>RFP Copilot</h1>
+  <p>Draft cited answers to security questionnaires from Corvane's approved answer library and policy docs. Synthetic data.</p>
+</header>
+<main>
+  <div class="bar">
+    <span class="muted">Sample:</span>
+    <span id="samples"></span>
+    <label class="upload">Upload .xlsx or .csv<input id="file" type="file" accept=".xlsx,.csv"></label>
+    <span style="flex:1"></span>
+    <a id="export" class="btn primary" href="#" hidden>Export answered file</a>
+    <a id="matrixcsv" class="btn" href="#" hidden>Matrix CSV</a>
+  </div>
+  <div id="summary"></div>
+  <div class="card" id="table"><div class="empty">Load a sample questionnaire or upload one to start.</div></div>
+</main>
+<div id="toast"></div>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+let job = null, filter = "all";
+const STATUS = { auto_approved: ["Auto-approved", "b-ok"], approved: ["Approved", "b-ok"], needs_review: ["Needs review", "b-warn"], sme: ["SME queue", "b-bad"] };
+const COMP = { yes: "b-ok", no: "b-bad", partial: "b-warn", unanswered: "b-info" };
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.style.display = "block"; setTimeout(() => (t.style.display = "none"), 2500); }
+
+async function api(path, opts = {}) {
+  const r = await fetch(path, opts);
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(body.detail || r.statusText);
+  return body;
+}
+
+async function loadSamples() {
+  const names = await api("/api/samples");
+  $("#samples").innerHTML = names.map((n) => `<button data-s="${esc(n)}">${esc(n.replace(/\.(xlsx|csv)$/, ""))}</button>`).join(" ");
+  $("#samples").onclick = async (e) => { const n = e.target.dataset.s; if (!n) return; show(await api(`/api/questionnaires/sample/${encodeURIComponent(n)}`, { method: "POST" })); };
+}
+
+$("#file").onchange = async (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  const fd = new FormData(); fd.append("file", f);
+  try { show(await api("/api/questionnaires", { method: "POST", body: fd })); } catch (err) { toast(err.message); }
+  e.target.value = "";
+};
+
+function citeText(answer, sources) {
+  const byId = Object.fromEntries(sources.map((s) => [s.id, s]));
+  return esc(answer).replace(/\[([A-Za-z0-9][A-Za-z0-9_.#-]*)\]/g, (m, id) => {
+    const s = byId[id]; const tip = s ? `${s.kind === "answer" ? "Library answer, " + s.date : s.title + ", effective " + s.date}: ${s.text}` : id;
+    return `<span class="cite" title="${esc(tip)}">${esc(id)}</span>`;
+  });
+}
+
+async function show(j) {
+  job = j;
+  $("#export").hidden = $("#matrixcsv").hidden = false;
+  $("#export").href = `/api/questionnaires/${j.id}/export`;
+  $("#matrixcsv").href = `/api/questionnaires/${j.id}/matrix?format=csv`;
+  const m = await api(`/api/questionnaires/${j.id}/matrix?drafts=true`);
+  const c = j.counts, n = j.items.length;
+  const conflicts = j.items.filter((i) => i.conflicts.length).length;
+  const stale = j.items.reduce((a, i) => a + i.superseded.length, 0);
+  const secs = Object.entries(m.by_section).map(([s, v]) => `<tr><td>${esc(s)}</td><td>${v.yes}</td><td>${v.no}</td><td>${v.partial}</td><td>${v.unanswered}</td></tr>`).join("");
+  $("#summary").innerHTML = `<div class="card"><div class="muted" style="margin-bottom:8px">${esc(j.filename)}: ${m.questions} questions, ${n} parts after splitting multi-part questions. Layout: question column ${j.layout.question_col + 1}, answer column ${j.layout.answer_col + 1}${j.layout.yesno_col != null ? ", yes/no column " + (j.layout.yesno_col + 1) : ""}, header on row ${j.layout.header_row + 1}.</div>
+    <div class="stats">
+      <div class="stat"><b>${c.auto_approved || 0}</b><span>auto-approved</span></div>
+      <div class="stat"><b>${(c.needs_review || 0)}</b><span>need review</span></div>
+      <div class="stat"><b>${c.approved || 0}</b><span>approved by reviewer</span></div>
+      <div class="stat"><b>${c.sme || 0}</b><span>routed to SME</span></div>
+      <div class="stat"><b>${conflicts}</b><span>with a source conflict</span></div>
+      <div class="stat"><b>${stale}</b><span>outdated sources filtered</span></div>
+    </div>
+    <details><summary>Compliance matrix (drafts included)</summary><table class="matrix"><tr><th>Section</th><th>Yes</th><th>No</th><th>Partial</th><th>Unanswered</th></tr>${secs}
+    <tr><th>All</th><th>${m.total.yes}</th><th>${m.total.no}</th><th>${m.total.partial}</th><th>${m.total.unanswered}</th></tr></table></details></div>`;
+  render();
+}
+
+function render() {
+  const items = job.items.filter((i) => filter === "all" || i.status === filter || (filter === "flags" && i.conflicts.length));
+  const tabs = [["all", "All"], ["needs_review", "Needs review"], ["auto_approved", "Auto-approved"], ["approved", "Approved"], ["sme", "SME queue"], ["flags", "Conflicts"]];
+  let h = `<div class="tabs">${tabs.map(([k, l]) => `<button data-f="${k}" class="${filter === k ? "on" : ""}">${l}</button>`).join("")}</div>`;
+  h += `<div class="row head"><div>Ref</div><div>Question</div><div>Draft answer</div><div class="wide-only">Status</div></div>`;
+  if (!items.length) h += `<div class="empty">Nothing here.</div>`;
+  for (const it of items) h += rowHtml(it);
+  $("#table").innerHTML = h;
+}
+
+function rowHtml(it) {
+  const d = it.draft, [sl, sc] = STATUS[it.status];
+  const comp = it.final_compliance || d.compliance;
+  const text = it.final_answer || d.answer;
+  const conf = d.confidence >= 0.85 ? "b-ok" : d.confidence >= 0.6 ? "b-warn" : "b-bad";
+  const used = new Set(d.citations);
+  const srcs = it.sources.map((s) => `<div class="src ${used.has(s.id) ? "used" : ""}"><b>${esc(s.id)}</b> <span class="muted">${s.kind === "answer" ? "library, " + esc(s.date) + (s.status !== "approved" ? ", " + esc(s.status) : "") : esc(s.title) + ", effective " + esc(s.date)} | score ${s.score}</span><br>${s.question ? "<i>" + esc(s.question) + "</i><br>" : ""}${esc(s.text)}</div>`).join("");
+  const old = it.superseded.map((s) => `<div class="src old"><b>${esc(s.id)}</b> filtered: ${esc(s.reason)}</div>`).join("");
+  const flags = it.conflicts.map((c) => `<div class="flag">Conflict between ${c.ids.map(esc).join(" and ")}: ${esc(c.detail)}</div>`).join("");
+  const errs = (it.validation_errors || []).map((e) => `<div class="flag">Validator: ${esc(e)}</div>`).join("");
+  const why = d.needs_review && it.status !== "approved" ? `<div class="muted">${esc(d.needs_review)}</div>` : "";
+  const wb = it.written_back ? `<div class="muted">Saved to library as ${esc(it.written_back)}</div>` : "";
+  const edited = it.edits.length ? `<div class="muted">${it.edits.length} edit(s), last by ${esc(it.edits[it.edits.length - 1].reviewer)}</div>` : "";
+  return `<div class="row" id="row-${esc(it.item_id)}">
+    <div><b>${esc(it.ref)}</b>${it.part ? " " + esc(it.part) : ""}<br><span class="muted">${esc(it.section)}</span></div>
+    <div class="q">${esc(it.text)}${it.part ? `<br><small title="${esc(it.question)}">Part ${esc(it.part)} of a multi-part question</small>` : ""}</div>
+    <div>${text ? citeText(text, it.sources) : '<span class="muted">No supported answer. Waiting for a subject matter expert.</span>'}
+      ${flags}${errs}${why}${edited}${wb}
+      <details><summary>Sources (${it.sources.length})${it.superseded.length ? ", " + it.superseded.length + " outdated filtered" : ""}</summary>${srcs}${old}</details>
+      <details><summary>Edit</summary>
+        <textarea id="ta-${esc(it.item_id)}">${esc(text)}</textarea>
+        <div class="edit-actions">
+          <select id="cp-${esc(it.item_id)}">${["yes", "no", "partial", "unanswered"].map((v) => `<option ${v === comp ? "selected" : ""}>${v}</option>`).join("")}</select>
+          <button data-act="save" data-id="${esc(it.item_id)}">Save edit</button>
+        </div>
+      </details>
+    </div>
+    <div><span class="badge ${sc}">${sl}</span><span class="badge ${COMP[comp]}">${esc(comp)}</span><span class="badge ${conf}">conf ${d.confidence.toFixed(2)}</span>
+      ${it.sme_team && it.status === "sme" ? `<span class="badge b-info">${esc(it.sme_team)}</span>` : ""}
+      <div class="edit-actions">${it.status === "approved" || it.status === "auto_approved" ? "" : `<button class="primary" data-act="approve" data-id="${esc(it.item_id)}" ${text ? "" : "disabled"}>Approve</button>`}</div></div>
+  </div>`;
+}
+
+$("#table").onclick = async (e) => {
+  const f = e.target.dataset.f;
+  if (f) { filter = f; render(); return; }
+  const act = e.target.dataset.act, id = e.target.dataset.id;
+  if (!act) return;
+  const base = `/api/questionnaires/${job.id}/items/${encodeURIComponent(id)}`;
+  const headers = { "Content-Type": "application/json" };
+  try {
+    if (act === "save") {
+      const text = document.getElementById("ta-" + id).value, compliance = document.getElementById("cp-" + id).value;
+      await api(base + "/edit", { method: "POST", headers, body: JSON.stringify({ text, compliance, reviewer: "demo-reviewer" }) });
+      toast("Edit saved as a diff");
+    } else {
+      const it = await api(base + "/approve", { method: "POST", headers, body: JSON.stringify({ reviewer: "demo-reviewer" }) });
+      toast(it.written_back ? `Approved and saved to the library as ${it.written_back}` : "Approved");
+    }
+    show(await api(`/api/questionnaires/${job.id}`));
+  } catch (err) { toast(err.message); }
+};
+
+loadSamples();
+const want = new URLSearchParams(location.search).get("sample");
+if (want) api(`/api/questionnaires/sample/${encodeURIComponent(want)}`, { method: "POST" }).then(show);
+</script>
+</body>
+</html>

@@ -1,0 +1,4622 @@
+[
+ {
+  "id": "A-0001",
+  "question": "Do you use subprocessors?",
+  "answer": "Yes. Corvane uses 6 subprocessors and notifies customers 14 days before a new subprocessor is added.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2023-10-02",
+  "product_version": "4.6",
+  "tags": [
+   "vendor-management",
+   "subprocessors"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0002",
+  "question": "Can individual records be deleted on request?",
+  "answer": "Yes. Individual records can be deleted on request through the API, and data subject requests are completed within 30 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-11-06",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "deletion-request"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0003",
+  "question": "Are contractors vetted?",
+  "answer": "Yes. All employees and contractors pass a background check before they start, where local law allows.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-02-06",
+  "product_version": "6.0",
+  "tags": [
+   "hr-security",
+   "background-checks"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0004",
+  "question": "What happens to our data at contract termination?",
+  "answer": "Yes. Customer data is deleted within 90 days after contract termination.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2023-02-27",
+  "product_version": "4.6",
+  "tags": [
+   "data-protection",
+   "retention-termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0005",
+  "question": "Do you enforce password complexity?",
+  "answer": "Yes. Local passwords must be at least 12 characters, are checked against a breached password list, and the account locks after 10 failed attempts.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-04-28",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "password"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0006",
+  "question": "What is the response SLA for Severity 1 tickets?",
+  "answer": "Yes. Severity 1 issues receive a response within 1 hour for Enterprise customers and within 4 hours for Business customers.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-12-05",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "response-times"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0007",
+  "question": "Do you have a mobile app?",
+  "answer": "No. Corvane Insight does not offer a native mobile app. The web application is responsive and supported on current mobile browsers.",
+  "compliance": "no",
+  "approver": "product-manager",
+  "date": "2026-07-10",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "mobile"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0008",
+  "question": "What is your password policy?",
+  "answer": "Yes. Passwords must be at least 8 characters and are rotated every 90 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2022-11-14",
+  "product_version": "4.1",
+  "tags": [
+   "access-control",
+   "password"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0009",
+  "question": "Do you perform background checks?",
+  "answer": "Yes. All employees and contractors pass a background check before they start, where local law allows.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2024-12-21",
+  "product_version": "5.3",
+  "tags": [
+   "hr-security",
+   "background-checks"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0010",
+  "question": "Will you sign a BAA?",
+  "answer": "Partial. Corvane signs a Business Associate Agreement for customers on the Enterprise plan only. HIPAA workloads must run in the US region.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2024-12-14",
+  "product_version": "5.3",
+  "tags": [
+   "compliance",
+   "hipaa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0011",
+  "question": "Do you have 24x7 security monitoring?",
+  "answer": "Yes. Security events are monitored 24 hours a day by an internal security operations team using a SIEM with automated alerting.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2024-12-04",
+  "product_version": "5.3",
+  "tags": [
+   "logging",
+   "monitoring"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0012",
+  "question": "Do you support IP allowlisting?",
+  "answer": "Yes. Enterprise administrators can restrict workspace access to a list of up to 50 IP ranges.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-01-12",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "ip-allowlist"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0013",
+  "question": "How much can prices rise at renewal?",
+  "answer": "Yes. Renewal price increases are capped at 5% per year for multi-year agreements.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-06-04",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "price-increase"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0014",
+  "question": "What are your RPO and RTO?",
+  "answer": "Yes. The recovery point objective is 4 hours and the recovery time objective is 8 hours for a full region failure.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-01-22",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "rpo-rto"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0015",
+  "question": "Are backups stored offsite?",
+  "answer": "Yes. Customer data is backed up every 4 hours. Backups are encrypted, stored in a second region, and retained for 35 days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-07-05",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "backups"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0016",
+  "question": "Will you delete our data when the contract ends?",
+  "answer": "Yes. Customer data is deleted within 30 days after contract termination, and deletion from backups completes within a further 35 days.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-08-17",
+  "product_version": "6.2",
+  "tags": [
+   "data-protection",
+   "retention-termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0017",
+  "question": "Can you provide a list of subprocessors?",
+  "answer": "Yes. Corvane uses 9 subprocessors. The current list is published on the trust center, and customers are notified 30 days before a new subprocessor is added.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-05-30",
+  "product_version": "6.0",
+  "tags": [
+   "vendor-management",
+   "subprocessors"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0018",
+  "question": "How long is incident evidence preserved?",
+  "answer": "Yes. Corvane keeps an external incident response firm on retainer and preserves forensic evidence for at least 12 months after an incident.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-05-04",
+  "product_version": "6.2",
+  "tags": [
+   "incident-response",
+   "forensics"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0019",
+  "question": "Can we subscribe to incident notifications?",
+  "answer": "Yes. A public status page shows current availability and incident history, and customers can subscribe to email or webhook notifications.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-10-09",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "status-page"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0020",
+  "question": "What is your breach notification timeline?",
+  "answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 48 hours.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-05-13",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "breach-notification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0021",
+  "question": "How quickly will you notify us of a breach?",
+  "answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 48 hours.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-07-04",
+  "product_version": "6.2",
+  "tags": [
+   "incident-response",
+   "breach-notification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0022",
+  "question": "How quickly are critical vulnerabilities fixed?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 7 days, high within 30 days, and medium within 90 days.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-01-31",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0023",
+  "question": "Do you offer price protection?",
+  "answer": "Yes. Renewal price increases are capped at 5% per year for multi-year agreements.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-09-21",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "price-increase"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0024",
+  "question": "Are employees screened before hire?",
+  "answer": "Yes. All employees and contractors pass a background check before they start, where local law allows.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-02-03",
+  "product_version": "6.0",
+  "tags": [
+   "hr-security",
+   "background-checks"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0025",
+  "question": "Do you provide an API?",
+  "answer": "Yes. Corvane Insight provides a REST API documented with OpenAPI 3.1, authenticated with scoped API keys or OAuth 2.0 client credentials.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-11-01",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0026",
+  "question": "Do you have a status page?",
+  "answer": "Yes. A public status page shows current availability and incident history, and customers can subscribe to email or webhook notifications.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-09-26",
+  "product_version": "5.3",
+  "tags": [
+   "sla-support",
+   "status-page"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0027",
+  "question": "Can Corvane employees access our data?",
+  "answer": "Yes. Corvane support staff can open a customer workspace only after the customer grants time-limited access from the admin console, and every action is written to the customer audit log.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-01-27",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "support-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0028",
+  "question": "Do you offer a single-tenant deployment?",
+  "answer": "Partial. A dedicated single-tenant deployment is available on the Enterprise plan for an additional fee. On-premises deployment is not offered.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2024-09-12",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "single-tenant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0029",
+  "question": "What are your patching timelines?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 7 days, high within 30 days, and medium within 90 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-08-19",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0030",
+  "question": "Will you notify us of new subprocessors?",
+  "answer": "Yes. Corvane uses 9 subprocessors. The current list is published on the trust center, and customers are notified 30 days before a new subprocessor is added.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-09-17",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "subprocessors"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0031",
+  "question": "Can you provide your most recent SOC 2 Type II report?",
+  "answer": "Yes. Corvane holds a SOC 2 Type II report covering the Security, Availability, and Confidentiality criteria. The latest audit period ended 2026-06-30 and the report is shared under NDA.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-11-08",
+  "product_version": "5.3",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0032",
+  "question": "What are the minimum password length requirements?",
+  "answer": "Yes. Local passwords must be at least 12 characters, are checked against a breached password list, and the account locks after 10 failed attempts.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-12-21",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "password"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0033",
+  "question": "Will you inform customers of security incidents?",
+  "answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 48 hours.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-01-28",
+  "product_version": "6.2",
+  "tags": [
+   "incident-response",
+   "breach-notification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0034",
+  "question": "Do you perform background checks?",
+  "answer": "Yes. All employees and contractors pass a background check before they start, where local law allows.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-04-18",
+  "product_version": "6.0",
+  "tags": [
+   "hr-security",
+   "background-checks"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0035",
+  "question": "What are your patching timelines?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 7 days, high within 30 days, and medium within 90 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-01-21",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0036",
+  "question": "Are there API rate limits?",
+  "answer": "Yes. The API allows 600 requests per minute per workspace on the Business plan and 3,000 requests per minute on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-01-01",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api-rate-limits"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0037",
+  "question": "Is there a cap on renewal price increases?",
+  "answer": "Yes. Renewal price increases are capped at 7% per year for multi-year agreements.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-02-09",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "price-increase"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0038",
+  "question": "What are your RPO and RTO?",
+  "answer": "Yes. The recovery point objective is 4 hours and the recovery time objective is 8 hours for a full region failure.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-09-17",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "rpo-rto"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0039",
+  "question": "How quickly will you notify us of a breach?",
+  "answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 48 hours.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-03-25",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "breach-notification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0040",
+  "question": "How is the API authenticated?",
+  "answer": "Yes. Corvane Insight provides a REST API documented with OpenAPI 3.1, authenticated with scoped API keys or OAuth 2.0 client credentials.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-09-21",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0041",
+  "question": "How are operating systems patched?",
+  "answer": "Yes. Hosts run a hardened minimal Linux image built from CIS benchmarks and are replaced, not patched in place, at least every 30 days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-03-19",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "os-hardening"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0042",
+  "question": "Do you support role-based access control?",
+  "answer": "Yes. The platform provides role-based access control with 5 built-in roles, and custom roles are available on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-07-09",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "rbac"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0043",
+  "question": "Do you run phishing simulations?",
+  "answer": "Yes. All staff complete security awareness training at hire and every 12 months, engineers complete secure coding training every 12 months, and phishing simulations run monthly.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-03-19",
+  "product_version": "6.2",
+  "tags": [
+   "hr-security",
+   "security-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0044",
+  "question": "How is customer data segregated from other customers?",
+  "answer": "Yes. The platform is multi-tenant. Each customer workspace is isolated by a tenant id enforced in the data access layer and has a separate encryption key per tenant.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-05-25",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "multi-tenancy"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0045",
+  "question": "What are your payment terms?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 30 days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-09-13",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0046",
+  "question": "Can AI features be disabled?",
+  "answer": "Yes. The optional AI assistant answers questions about dashboards. It is off by default, an administrator must enable it, and prompts are not retained by the model provider.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-02-22",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "ai-assistant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0047",
+  "question": "Can you provide an architecture overview?",
+  "answer": "Yes. The platform consists of a web application, a REST API, a query engine, and a columnar storage layer, deployed as containers on managed Kubernetes.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-02-26",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "architecture"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0048",
+  "question": "What user activity is logged?",
+  "answer": "Yes. The customer audit log records logins, permission changes, exports, and API key events, and can be streamed to a SIEM through a webhook or downloaded as JSON.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-01-15",
+  "product_version": "6.2",
+  "tags": [
+   "logging",
+   "audit-log"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0049",
+  "question": "What was your uptime over the last year?",
+  "answer": "Yes. Measured availability over the last 12 months was 99.97%. Historical uptime is published on the public status page.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-09-04",
+  "product_version": "5.3",
+  "tags": [
+   "business-continuity",
+   "uptime-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0050",
+  "question": "How are encryption keys managed?",
+  "answer": "Yes. Encryption keys are managed in a cloud key management service backed by FIPS 140-2 Level 3 hardware security modules and are rotated every 12 months.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-12-10",
+  "product_version": "5.3",
+  "tags": [
+   "encryption",
+   "key-mgmt"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0051",
+  "question": "When are maintenance windows scheduled?",
+  "answer": "Yes. Planned maintenance is announced at least 5 business days in advance and is scheduled on Sundays between 02:00 and 06:00 UTC. Most releases need no downtime.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-09-04",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "maintenance"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0052",
+  "question": "Is MFA enforced for employees?",
+  "answer": "Yes. Multi-factor authentication is enforced for all Corvane workforce accounts and is available to customers for local logins, with TOTP apps and WebAuthn security keys supported.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-08-12",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "mfa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0053",
+  "question": "How often are user access rights reviewed?",
+  "answer": "Yes. Access to production systems is reviewed every 90 days by system owners, and access is revoked within 24 hours of termination.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-11-28",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "access-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0054",
+  "question": "Do your staff need permission to view customer data?",
+  "answer": "Yes. Corvane support staff can open a customer workspace only after the customer grants time-limited access from the admin console, and every action is written to the customer audit log.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-06-27",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "support-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0055",
+  "question": "How long are backups retained?",
+  "answer": "Yes. Customer data is backed up every 24 hours and backups are retained for 30 days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2023-04-24",
+  "product_version": "4.6",
+  "tags": [
+   "business-continuity",
+   "backups"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0056",
+  "question": "Do contractors sign confidentiality terms?",
+  "answer": "Yes. All employees and contractors sign confidentiality agreements before they receive system access.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-09-03",
+  "product_version": "6.2",
+  "tags": [
+   "hr-security",
+   "confidentiality"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0057",
+  "question": "Do you have a bug bounty program?",
+  "answer": "Yes. Corvane runs a public vulnerability disclosure program and a private bug bounty program managed by an external platform.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-11-27",
+  "product_version": "5.3",
+  "tags": [
+   "vulnerability-management",
+   "bug-bounty"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0058",
+  "question": "Do you support all major browsers?",
+  "answer": "Yes. The latest two versions of all major desktop browsers are supported.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-12-06",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "browsers"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0059",
+  "question": "Do you use hardware security modules for key storage?",
+  "answer": "Yes. Encryption keys are managed in a cloud key management service backed by FIPS 140-2 Level 3 hardware security modules and are rotated every 12 months.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-02-02",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "key-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0060",
+  "question": "How can researchers report vulnerabilities?",
+  "answer": "Yes. Corvane runs a public vulnerability disclosure program and a private bug bounty program managed by an external platform.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-06-21",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "bug-bounty"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0061",
+  "question": "How long are backups retained?",
+  "answer": "Yes. Customer data is backed up every 4 hours. Backups are encrypted, stored in a second region, and retained for 35 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-01-20",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "backups"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0062",
+  "question": "Is your BCP reviewed regularly?",
+  "answer": "Yes. Corvane maintains a business continuity plan, reviewed every 12 months, that covers loss of offices, key staff, and critical vendors.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-06-16",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "bcp"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0063",
+  "question": "Is there a cap on renewal price increases?",
+  "answer": "Yes. Renewal price increases are capped at 5% per year for multi-year agreements.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-04-04",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "price-increase"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0064",
+  "question": "How are security events monitored?",
+  "answer": "Yes. Security events are monitored 24 hours a day by an internal security operations team using a SIEM with automated alerting.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-07-08",
+  "product_version": "6.2",
+  "tags": [
+   "logging",
+   "monitoring"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0065",
+  "question": "Is data encrypted at rest?",
+  "answer": "Yes. All customer data is encrypted at rest with AES-256, including databases, object storage, and backups.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-12-29",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "enc-rest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0066",
+  "question": "Are you ISO 27001 certified?",
+  "answer": "Yes. Corvane is certified to ISO/IEC 27001:2013 for the Corvane Insight platform.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2023-05-02",
+  "product_version": "4.6",
+  "tags": [
+   "compliance",
+   "iso27001"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0067",
+  "question": "Do you use offshore support staff?",
+  "answer": "Partial. Customer data is stored only in the selected region. Support staff in the US, UK, and Portugal may access data with customer permission.",
+  "compliance": "partial",
+  "approver": "security-lead",
+  "date": "2026-06-30",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "offshore"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0068",
+  "question": "How long are logs retained?",
+  "answer": "Yes. Security and audit logs are retained for 13 months, with the most recent 90 days searchable online.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-11-14",
+  "product_version": "5.3",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0069",
+  "question": "Have you had a data breach?",
+  "answer": "No. Corvane has not had a security breach involving customer data in the last 5 years.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2024-09-24",
+  "product_version": "5.3",
+  "tags": [
+   "incident-response",
+   "breach-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0070",
+  "question": "Is production data used for testing?",
+  "answer": "No. Production customer data is never copied into development or test environments. Engineers use synthetic data sets.",
+  "compliance": "no",
+  "approver": "security-lead",
+  "date": "2024-11-26",
+  "product_version": "5.3",
+  "tags": [
+   "data-protection",
+   "test-data"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0071",
+  "question": "Which TLS versions do you support?",
+  "answer": "Yes. All connections use TLS 1.2 or higher, and TLS 1.3 is preferred. Older protocols are disabled.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-02-26",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "enc-transit"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0072",
+  "question": "Is the service protected against volumetric attacks?",
+  "answer": "Yes. DDoS protection is provided at the network edge by the cloud provider and the content delivery network, with rate limiting at the API gateway.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-08-22",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "ddos"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0073",
+  "question": "Can you provide your most recent SOC 2 Type II report?",
+  "answer": "Yes. Corvane holds a SOC 2 Type I report dated 2022-11-30. A Type II audit is planned.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2023-02-05",
+  "product_version": "4.6",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0074",
+  "question": "How is planned maintenance communicated?",
+  "answer": "Yes. Planned maintenance is announced at least 5 business days in advance and is scheduled on Sundays between 02:00 and 06:00 UTC. Most releases need no downtime.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-01-14",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "maintenance"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0075",
+  "question": "Do you enforce least privilege for administrators?",
+  "answer": "Yes. Engineers have no standing production access. Access is granted just in time for up to 4 hours, requires a ticket and peer approval, and every session is recorded.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-06-28",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "privileged-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0076",
+  "question": "How are suppliers reviewed?",
+  "answer": "Yes. Vendors with access to customer data are assessed before onboarding and reviewed every 12 months, including a review of their SOC 2 or ISO 27001 report.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-05-25",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "vendor-risk"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0077",
+  "question": "Do you have a business continuity plan?",
+  "answer": "Yes. Corvane maintains a business continuity plan, reviewed every 12 months, that covers loss of offices, key staff, and critical vendors.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-05-07",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "bcp"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0078",
+  "question": "Do you have forensic capabilities?",
+  "answer": "Yes. Corvane keeps an external incident response firm on retainer and preserves forensic evidence for at least 12 months after an incident.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-07-31",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "forensics"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0079",
+  "question": "Are you GDPR compliant?",
+  "answer": "Yes. Corvane acts as a processor under GDPR and signs a Data Processing Agreement with Standard Contractual Clauses for any transfer outside the EEA.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-05-10",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "gdpr"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0080",
+  "question": "Do you have a SOC 2 report?",
+  "answer": "Yes. Corvane holds a SOC 2 Type I report dated 2022-11-30. A Type II audit is planned.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2023-01-15",
+  "product_version": "4.6",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0081",
+  "question": "Do you conform to WCAG?",
+  "answer": "Partial. The web application targets WCAG 2.1 AA. A third-party audit in 2026 found 4 open issues, which are scheduled for remediation.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2025-09-18",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "accessibility"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0082",
+  "question": "What availability do you guarantee?",
+  "answer": "Yes. Corvane commits to 99.9% monthly uptime for the Business plan and 99.95% for the Enterprise plan, with service credits of up to 25% of monthly fees.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-07-21",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "sla-uptime"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0083",
+  "question": "Can the product be installed on premises?",
+  "answer": "Partial. A dedicated single-tenant deployment is available on the Enterprise plan for an additional fee. On-premises deployment is not offered.",
+  "compliance": "partial",
+  "approver": "product-manager",
+  "date": "2025-08-14",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "single-tenant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0084",
+  "question": "What are the main components of the platform?",
+  "answer": "Yes. The platform consists of a web application, a REST API, a query engine, and a columnar storage layer, deployed as containers on managed Kubernetes.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-06-06",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "architecture"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0085",
+  "question": "Is the product accessible?",
+  "answer": "Partial. The web application targets WCAG 2.1 AA. A third-party audit in 2026 found 4 open issues, which are scheduled for remediation.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2024-09-30",
+  "product_version": "5.3",
+  "tags": [
+   "product",
+   "accessibility"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0086",
+  "question": "Do you test your disaster recovery plan?",
+  "answer": "Yes. The disaster recovery plan is tested every 12 months with a full regional failover exercise. The last test was completed on 2026-04-14.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-02-15",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "dr-test"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0087",
+  "question": "Will you accept uncapped liability?",
+  "answer": "Partial. Liability is capped at 12 months of fees paid. Uncapped liability is not offered, but a higher cap of 2 times annual fees for data breaches is available on Enterprise agreements.",
+  "compliance": "partial",
+  "approver": "privacy-officer",
+  "date": "2025-07-17",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "liability"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0088",
+  "question": "What is your recovery time objective?",
+  "answer": "Yes. The recovery point objective is 4 hours and the recovery time objective is 8 hours for a full region failure.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-06-14",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "rpo-rto"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0089",
+  "question": "How often is customer data backed up?",
+  "answer": "Yes. Customer data is backed up every 4 hours. Backups are encrypted, stored in a second region, and retained for 35 days.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-11-17",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "backups"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0090",
+  "question": "Are servers hardened?",
+  "answer": "Yes. Hosts run a hardened minimal Linux image built from CIS benchmarks and are replaced, not patched in place, at least every 30 days.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-03-14",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "os-hardening"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0091",
+  "question": "How is the production network segmented?",
+  "answer": "Yes. Production runs in private subnets with no public IP addresses. Only load balancers are internet-facing, and a web application firewall filters all inbound traffic.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-08-28",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "network-security"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0092",
+  "question": "What are your payment terms?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 30 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-12-03",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0093",
+  "question": "Can accounts be deprovisioned automatically from our directory?",
+  "answer": "Yes. User provisioning and deprovisioning are supported through SCIM 2.0 on the Business and Enterprise plans.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-09-11",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "scim"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0094",
+  "question": "Can we store credit card numbers in the platform?",
+  "answer": "No. Corvane Insight is not in scope for PCI DSS and customers must not upload cardholder data. Payments to Corvane are handled by a PCI DSS Level 1 payment subprocessor.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2025-09-06",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "pci"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0095",
+  "question": "Do you provide audit logs to customers?",
+  "answer": "Yes. The customer audit log records logins, permission changes, exports, and API key events, and can be streamed to a SIEM through a webhook or downloaded as JSON.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-09-04",
+  "product_version": "5.3",
+  "tags": [
+   "logging",
+   "audit-log"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0096",
+  "question": "Do developers have access to customer data in test environments?",
+  "answer": "No. Production customer data is never copied into development or test environments. Engineers use synthetic data sets.",
+  "compliance": "no",
+  "approver": "legal-counsel",
+  "date": "2024-12-17",
+  "product_version": "5.3",
+  "tags": [
+   "data-protection",
+   "test-data"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0097",
+  "question": "How often are third-party penetration tests performed?",
+  "answer": "Yes. An independent firm performs a penetration test of the platform every 6 months. An executive summary of the latest test is available under NDA.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-02-13",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "pentest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0098",
+  "question": "Do updates cause downtime?",
+  "answer": "Yes. Planned maintenance is announced at least 5 business days in advance and is scheduled on Sundays between 02:00 and 06:00 UTC. Most releases need no downtime.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-05-11",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "maintenance"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0099",
+  "question": "Do engineers have standing access to production?",
+  "answer": "Yes. Engineers have no standing production access. Access is granted just in time for up to 4 hours, requires a ticket and peer approval, and every session is recorded.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-12-15",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "privileged-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0100",
+  "question": "Do you conduct penetration testing?",
+  "answer": "Yes. An independent firm performs a penetration test of the platform every 12 months.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2023-08-21",
+  "product_version": "4.6",
+  "tags": [
+   "vulnerability-management",
+   "pentest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0101",
+  "question": "What is your limitation of liability?",
+  "answer": "Partial. Liability is capped at 12 months of fees paid. Uncapped liability is not offered, but a higher cap of 2 times annual fees for data breaches is available on Enterprise agreements.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2024-09-23",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "liability"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0102",
+  "question": "Is a proof of concept available?",
+  "answer": "Yes. A 14 day free trial of the Business plan is available with sample data.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-01-15",
+  "product_version": "6.2",
+  "tags": [
+   "commercial",
+   "trial"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0103",
+  "question": "Can users authenticate with our corporate identity provider?",
+  "answer": "Yes. Corvane Insight supports SAML 2.0 and OpenID Connect single sign-on with any compliant identity provider.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-08-31",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "sso"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0104",
+  "question": "Do you have a VPAT or accessibility statement?",
+  "answer": "Partial. The web application targets WCAG 2.1 AA. A third-party audit in 2026 found 4 open issues, which are scheduled for remediation.",
+  "compliance": "partial",
+  "approver": "legal-counsel",
+  "date": "2025-11-13",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "accessibility"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0105",
+  "question": "Can we evaluate the product before buying?",
+  "answer": "Yes. A 14 day free trial of the Business plan is available with sample data.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-11-14",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "trial"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0106",
+  "question": "Is additional storage available?",
+  "answer": "Yes. Workspaces on the Business plan include 500 GB of storage and Enterprise plans include 5 TB, with additional storage billed per TB.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-02-19",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "storage-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0107",
+  "question": "Is automated user provisioning supported?",
+  "answer": "Yes. User provisioning and deprovisioning are supported through SCIM 2.0 on the Business and Enterprise plans.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-12-02",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "scim"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0108",
+  "question": "Is our data used for machine learning training?",
+  "answer": "No. Corvane does not use customer data to train machine learning models, and no customer data is sent to a third-party model provider unless the customer enables the AI assistant.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2025-11-07",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "ai-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0109",
+  "question": "Do you require MFA?",
+  "answer": "Yes. Multi-factor authentication is enforced for all Corvane workforce accounts and is available to customers for local logins, with TOTP apps and WebAuthn security keys supported.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-03-21",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "mfa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0110",
+  "question": "Describe your network security controls.",
+  "answer": "Yes. Production runs in private subnets with no public IP addresses. Only load balancers are internet-facing, and a web application firewall filters all inbound traffic.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-02-22",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "network-security"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0111",
+  "question": "Where is the service hosted?",
+  "answer": "Yes. Corvane Insight runs on a major public cloud provider across multiple availability zones in each region. Corvane does not operate its own data centers.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-08-01",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "hosting"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0112",
+  "question": "Is a test environment available?",
+  "answer": "Yes. Enterprise customers receive 1 non-production sandbox workspace for testing, refreshed on request.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-10-21",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "sandbox"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0113",
+  "question": "What are your support response times?",
+  "answer": "Yes. Severity 1 issues receive a response within 1 hour for Enterprise customers and within 4 hours for Business customers.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-02-01",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "response-times"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0114",
+  "question": "How often is security training completed?",
+  "answer": "Yes. All staff complete security awareness training at hire and every 12 months, engineers complete secure coding training every 12 months, and phishing simulations run monthly.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-12-13",
+  "product_version": "6.0",
+  "tags": [
+   "hr-security",
+   "security-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0115",
+  "question": "Are fees refunded on termination?",
+  "answer": "Yes. Either party may terminate for material breach with 30 days written notice if the breach is not cured, and prepaid fees are refunded pro rata when Corvane is in breach.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-06-07",
+  "product_version": "6.2",
+  "tags": [
+   "commercial",
+   "termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0116",
+  "question": "How is customer data classified?",
+  "answer": "Yes. Corvane classifies information as Public, Internal, Confidential, or Restricted. All customer data is classified as Restricted.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-08-06",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-classification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0117",
+  "question": "Can we limit logins to specific IP addresses?",
+  "answer": "Yes. Enterprise administrators can restrict workspace access to a list of up to 50 IP ranges.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-01-27",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "ip-allowlist"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0118",
+  "question": "From which countries can staff access customer data?",
+  "answer": "Partial. Customer data is stored only in the selected region. Support staff in the US, UK, and Portugal may access data with customer permission.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2026-08-11",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "offshore"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0119",
+  "question": "Do you provide a sandbox environment?",
+  "answer": "Yes. Enterprise customers receive 1 non-production sandbox workspace for testing, refreshed on request.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-09-27",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "sandbox"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0120",
+  "question": "How quickly are critical vulnerabilities fixed?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 30 days and high within 60 days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2023-08-07",
+  "product_version": "4.6",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0121",
+  "question": "Do you use a web application firewall?",
+  "answer": "Yes. Production runs in private subnets with no public IP addresses. Only load balancers are internet-facing, and a web application firewall filters all inbound traffic.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-05-03",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "network-security"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0122",
+  "question": "How can we contact support?",
+  "answer": "Yes. Standard support is available 9am to 6pm on business days. Enterprise customers get 24x7 support for Severity 1 issues.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-03-17",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "support-hours"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0123",
+  "question": "How is privileged access to production controlled?",
+  "answer": "Yes. Engineers have no standing production access. Access is granted just in time for up to 4 hours, requires a ticket and peer approval, and every session is recorded.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-09-14",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "privileged-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0124",
+  "question": "What is your recovery point objective?",
+  "answer": "Yes. The recovery point objective is 4 hours and the recovery time objective is 8 hours for a full region failure.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-08-25",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "rpo-rto"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0125",
+  "question": "Do employees sign NDAs?",
+  "answer": "Yes. All employees and contractors sign confidentiality agreements before they receive system access.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-10-09",
+  "product_version": "5.3",
+  "tags": [
+   "hr-security",
+   "confidentiality"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0126",
+  "question": "What audit rights do customers have?",
+  "answer": "Partial. Customers may review our SOC 2 report and send one security questionnaire per year. On-site audits are available to Enterprise customers with 30 days notice.",
+  "compliance": "partial",
+  "approver": "legal-counsel",
+  "date": "2026-05-21",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "audit-rights"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0127",
+  "question": "How much data can we store?",
+  "answer": "Yes. Workspaces on the Business plan include 500 GB of storage and Enterprise plans include 5 TB, with additional storage billed per TB.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-02-13",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "storage-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0128",
+  "question": "What are the API throttling limits?",
+  "answer": "Yes. The API allows 600 requests per minute per workspace on the Business plan and 3,000 requests per minute on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-09-01",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "api-rate-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0129",
+  "question": "What availability have you achieved?",
+  "answer": "Yes. Measured availability over the last 12 months was 99.97%. Historical uptime is published on the public status page.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-09-08",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "uptime-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0130",
+  "question": "How is planned maintenance communicated?",
+  "answer": "Yes. Planned maintenance is announced at least 5 business days in advance and is scheduled on Sundays between 02:00 and 06:00 UTC. Most releases need no downtime.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-06-09",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "maintenance"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0131",
+  "question": "Can you share your latest penetration test results?",
+  "answer": "Yes. An independent firm performs a penetration test of the platform every 6 months. An executive summary of the latest test is available under NDA.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-08-14",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "pentest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0132",
+  "question": "What are your support response times?",
+  "answer": "Yes. Severity 1 issues receive a response within 2 hours for all customers.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2023-11-20",
+  "product_version": "4.6",
+  "tags": [
+   "sla-support",
+   "response-times"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0133",
+  "question": "Are you PCI DSS compliant?",
+  "answer": "No. Corvane Insight is not in scope for PCI DSS and customers must not upload cardholder data. Payments to Corvane are handled by a PCI DSS Level 1 payment subprocessor.",
+  "compliance": "no",
+  "approver": "privacy-officer",
+  "date": "2026-08-08",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "pci"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0134",
+  "question": "Are third-party dependencies scanned?",
+  "answer": "Yes. Infrastructure and container images are scanned for vulnerabilities daily, and application dependencies are scanned on every build.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-06-21",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "vuln-scanning"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0135",
+  "question": "Are you PCI DSS compliant?",
+  "answer": "No. Corvane Insight is not in scope for PCI DSS and customers must not upload cardholder data. Payments to Corvane are handled by a PCI DSS Level 1 payment subprocessor.",
+  "compliance": "no",
+  "approver": "security-lead",
+  "date": "2025-01-29",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "pci"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0136",
+  "question": "What are the storage limits?",
+  "answer": "Yes. Workspaces on the Business plan include 500 GB of storage and Enterprise plans include 5 TB, with additional storage billed per TB.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-11-16",
+  "product_version": "5.3",
+  "tags": [
+   "product",
+   "storage-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0137",
+  "question": "How is the product priced?",
+  "answer": "Yes. Corvane Insight is priced per named user per year, with 3 plans: Team, Business, and Enterprise. Volume discounts start at 100 users.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-01-21",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "pricing-model"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0138",
+  "question": "Do you have a change management process?",
+  "answer": "Yes. Production changes go through a change management process with peer review, automated deployment, and a rollback plan. Emergency changes are reviewed within 2 business days.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-09-02",
+  "product_version": "5.3",
+  "tags": [
+   "secure-development",
+   "change-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0139",
+  "question": "Have you had a data breach?",
+  "answer": "No. Corvane has not had a security breach involving customer data in the last 5 years.",
+  "compliance": "no",
+  "approver": "privacy-officer",
+  "date": "2026-06-07",
+  "product_version": "6.2",
+  "tags": [
+   "incident-response",
+   "breach-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0140",
+  "question": "How do you isolate tenants?",
+  "answer": "Yes. The platform is multi-tenant. Each customer workspace is isolated by a tenant id enforced in the data access layer and has a separate encryption key per tenant.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-06-12",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "multi-tenancy"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0141",
+  "question": "Can the product be used on phones?",
+  "answer": "No. Corvane Insight does not offer a native mobile app. The web application is responsive and supported on current mobile browsers.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2026-06-13",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "mobile"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0142",
+  "question": "Have you experienced any security incidents involving customer data?",
+  "answer": "No. Corvane has not had a security breach involving customer data in the last 5 years.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2025-07-04",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "breach-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0143",
+  "question": "How do you handle data subject requests?",
+  "answer": "Yes. Individual records can be deleted on request through the API, and data subject requests are completed within 30 days.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-07-24",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "deletion-request"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0144",
+  "question": "How quickly do you respond to critical issues?",
+  "answer": "Yes. Severity 1 issues receive a response within 1 hour for Enterprise customers and within 4 hours for Business customers.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-10-02",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "response-times"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0145",
+  "question": "Do you require MFA?",
+  "answer": "Yes. Multi-factor authentication is enforced for all Corvane workforce accounts and is available to customers for local logins, with TOTP apps and WebAuthn security keys supported.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-12-26",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "mfa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0146",
+  "question": "Can we choose the region where our data is hosted?",
+  "answer": "Yes. Customers choose one of 3 hosting regions at signup: US (Virginia), EU (Frankfurt), or UK (London). Customer data stays in the selected region.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-10-13",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-residency"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0147",
+  "question": "Is customer data accessed from outside our region?",
+  "answer": "Partial. Customer data is stored only in the selected region. Support staff in the US, UK, and Portugal may access data with customer permission.",
+  "compliance": "partial",
+  "approver": "security-lead",
+  "date": "2026-10-02",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "offshore"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0148",
+  "question": "Do you perform code reviews?",
+  "answer": "Yes. Every code change requires review and approval by a second engineer, and automated tests and static analysis must pass before merge.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-08-17",
+  "product_version": "6.2",
+  "tags": [
+   "secure-development",
+   "code-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0149",
+  "question": "How are outages communicated?",
+  "answer": "Yes. A public status page shows current availability and incident history, and customers can subscribe to email or webhook notifications.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-02-10",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "status-page"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0150",
+  "question": "What are your patching timelines?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 30 days and high within 60 days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2023-07-17",
+  "product_version": "4.6",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0151",
+  "question": "Where is the service hosted?",
+  "answer": "Yes. Corvane Insight runs on a major public cloud provider across multiple availability zones in each region. Corvane does not operate its own data centers.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-10-29",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "hosting"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0152",
+  "question": "Do you perform vulnerability scanning?",
+  "answer": "Yes. Infrastructure and container images are scanned for vulnerabilities daily, and application dependencies are scanned on every build.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2024-10-15",
+  "product_version": "5.3",
+  "tags": [
+   "vulnerability-management",
+   "vuln-scanning"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0153",
+  "question": "Can we bring our own encryption keys?",
+  "answer": "Partial. Customer managed keys (BYOK) are available on the Enterprise plan for data at rest in the US and EU regions. Hold your own key is not supported.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2026-02-07",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "byok"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0154",
+  "question": "How is support access to customer tenants controlled?",
+  "answer": "Yes. Corvane support staff can open a customer workspace only after the customer grants time-limited access from the admin console, and every action is written to the customer audit log.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-05-05",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "support-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0155",
+  "question": "Is multi-factor authentication available for customer users?",
+  "answer": "Yes. Multi-factor authentication is enforced for all Corvane workforce accounts and is available to customers for local logins, with TOTP apps and WebAuthn security keys supported.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-03-29",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "mfa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0156",
+  "question": "Is data encrypted in transit?",
+  "answer": "Yes. All connections use TLS 1.0 or higher.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2022-06-30",
+  "product_version": "4.1",
+  "tags": [
+   "encryption",
+   "enc-transit"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0157",
+  "question": "Has your organization completed a SOC 2 audit?",
+  "answer": "Yes. Corvane holds a SOC 2 Type II report covering the Security, Availability, and Confidentiality criteria. The latest audit period ended 2026-06-30 and the report is shared under NDA.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-03-15",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0158",
+  "question": "Do you perform periodic access reviews?",
+  "answer": "Yes. Access to production systems is reviewed every 90 days by system owners, and access is revoked within 24 hours of termination.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-08-07",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "access-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0159",
+  "question": "How is the production network segmented?",
+  "answer": "Yes. Production runs in private subnets with no public IP addresses. Only load balancers are internet-facing, and a web application firewall filters all inbound traffic.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-12-22",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "network-security"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0160",
+  "question": "Do you support SSO?",
+  "answer": "Yes. Corvane Insight supports SAML 2.0 and OpenID Connect single sign-on with any compliant identity provider.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-09-19",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "sso"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0161",
+  "question": "Is a dedicated environment available?",
+  "answer": "Partial. A dedicated single-tenant deployment is available on the Enterprise plan for an additional fee. On-premises deployment is not offered.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2025-12-09",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "single-tenant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0162",
+  "question": "Do you bill annually or monthly?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 30 days.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-07-24",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0163",
+  "question": "What is the idle session timeout?",
+  "answer": "Yes. Web sessions expire after 30 minutes of inactivity by default, and administrators can set a value between 5 and 480 minutes.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-08-29",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "session-timeout"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0164",
+  "question": "Is data portability supported?",
+  "answer": "Yes. Administrators can export all workspace data at any time in CSV or Parquet format through the console or the export API.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-09-10",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-export"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0165",
+  "question": "Is there an iOS or Android application?",
+  "answer": "No. Corvane Insight does not offer a native mobile app. The web application is responsive and supported on current mobile browsers.",
+  "compliance": "no",
+  "approver": "grc-analyst",
+  "date": "2025-06-20",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "mobile"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0166",
+  "question": "Can you provide a list of subprocessors?",
+  "answer": "Yes. Corvane uses 6 subprocessors and notifies customers 14 days before a new subprocessor is added.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2023-10-23",
+  "product_version": "4.6",
+  "tags": [
+   "vendor-management",
+   "subprocessors"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0167",
+  "question": "Is the API documented?",
+  "answer": "Yes. Corvane Insight provides a REST API documented with OpenAPI 3.1, authenticated with scoped API keys or OAuth 2.0 client credentials.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-08-19",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0168",
+  "question": "Can Corvane employees access our data?",
+  "answer": "Yes. Corvane support staff can open a customer workspace only after the customer grants time-limited access from the admin console, and every action is written to the customer audit log.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-04-06",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "support-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0169",
+  "question": "Are you ISO 27001 certified?",
+  "answer": "Yes. Corvane is certified to ISO/IEC 27001:2022. The certificate covers the Corvane Insight platform and corporate IT and is valid until 2028-03-31.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-12-13",
+  "product_version": "5.3",
+  "tags": [
+   "compliance",
+   "iso27001"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0170",
+  "question": "Are there browser requirements?",
+  "answer": "Yes. The latest two versions of all major desktop browsers are supported.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-05-23",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "browsers"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0171",
+  "question": "Describe your incident response process.",
+  "answer": "Yes. Corvane maintains a documented incident response plan with defined severity levels, an on-call rotation, and a tabletop exercise every 6 months.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-09-01",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "ir-plan"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0172",
+  "question": "How often are failover exercises conducted?",
+  "answer": "Yes. The disaster recovery plan is tested every 12 months with a full regional failover exercise. The last test was completed on 2026-04-14.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-11-16",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "dr-test"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0173",
+  "question": "Do you provide a sandbox environment?",
+  "answer": "Yes. Enterprise customers receive 1 non-production sandbox workspace for testing, refreshed on request.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-05-25",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "sandbox"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0174",
+  "question": "Do you encrypt network traffic?",
+  "answer": "Yes. All connections use TLS 1.2 or higher, and TLS 1.3 is preferred. Older protocols are disabled.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-03-23",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "enc-transit"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0175",
+  "question": "Is data encrypted at rest?",
+  "answer": "Yes. All customer data is encrypted at rest with AES-256, including databases, object storage, and backups.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-01-23",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "enc-rest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0176",
+  "question": "How are encryption keys managed?",
+  "answer": "Yes. Encryption keys are managed in a cloud key management service backed by FIPS 140-2 Level 3 hardware security modules and are rotated every 12 months.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-03-30",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "key-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0177",
+  "question": "How often are systems scanned for vulnerabilities?",
+  "answer": "Yes. Infrastructure and container images are scanned for vulnerabilities daily, and application dependencies are scanned on every build.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-01-27",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "vuln-scanning"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0178",
+  "question": "Can access be restricted to our corporate network?",
+  "answer": "Yes. Enterprise administrators can restrict workspace access to a list of up to 50 IP ranges.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-02-03",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "ip-allowlist"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0179",
+  "question": "Do you provide an SBOM?",
+  "answer": "Yes. A software bill of materials is generated for every release in CycloneDX format and is available to Enterprise customers on request.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-05-07",
+  "product_version": "6.0",
+  "tags": [
+   "secure-development",
+   "sbom"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0180",
+  "question": "Do you track open source components?",
+  "answer": "Yes. A software bill of materials is generated for every release in CycloneDX format and is available to Enterprise customers on request.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-02-21",
+  "product_version": "6.2",
+  "tags": [
+   "secure-development",
+   "sbom"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0181",
+  "question": "What happens to our data at contract termination?",
+  "answer": "Yes. Customer data is deleted within 30 days after contract termination, and deletion from backups completes within a further 35 days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-05-12",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "retention-termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0182",
+  "question": "Do you support IP allowlisting?",
+  "answer": "Yes. Enterprise administrators can restrict workspace access to a list of up to 50 IP ranges.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-02-27",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "ip-allowlist"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0183",
+  "question": "How long do you keep audit logs?",
+  "answer": "Yes. Security and audit logs are retained for 13 months, with the most recent 90 days searchable online.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-11-27",
+  "product_version": "6.0",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0184",
+  "question": "How long do you retain customer data after termination?",
+  "answer": "Yes. Customer data is deleted within 30 days after contract termination, and deletion from backups completes within a further 35 days.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-02-02",
+  "product_version": "6.2",
+  "tags": [
+   "data-protection",
+   "retention-termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0185",
+  "question": "How do you plan for business disruption?",
+  "answer": "Yes. Corvane maintains a business continuity plan, reviewed every 12 months, that covers loss of offices, key staff, and critical vendors.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-05-07",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "bcp"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0186",
+  "question": "Do you perform code reviews?",
+  "answer": "Yes. Every code change requires review and approval by a second engineer, and automated tests and static analysis must pass before merge.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-12-11",
+  "product_version": "5.3",
+  "tags": [
+   "secure-development",
+   "code-review"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0187",
+  "question": "Do you assess the security of your vendors?",
+  "answer": "Yes. Vendors with access to customer data are assessed before onboarding and reviewed every 12 months, including a review of their SOC 2 or ISO 27001 report.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2026-08-02",
+  "product_version": "6.2",
+  "tags": [
+   "vendor-management",
+   "vendor-risk"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0188",
+  "question": "Can administrators configure session expiry?",
+  "answer": "Yes. Web sessions expire after 30 minutes of inactivity by default, and administrators can set a value between 5 and 480 minutes.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-09-28",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "session-timeout"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0189",
+  "question": "Do you support HIPAA compliance?",
+  "answer": "Partial. Corvane signs a Business Associate Agreement for customers on the Enterprise plan only. HIPAA workloads must run in the US region.",
+  "compliance": "partial",
+  "approver": "privacy-officer",
+  "date": "2025-01-26",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "hipaa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0190",
+  "question": "Can Corvane act as a HIPAA business associate?",
+  "answer": "Partial. Corvane signs a Business Associate Agreement for customers on the Enterprise plan only. HIPAA workloads must run in the US region.",
+  "compliance": "partial",
+  "approver": "legal-counsel",
+  "date": "2025-08-17",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "hipaa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0191",
+  "question": "Can we terminate for convenience?",
+  "answer": "Yes. Either party may terminate for material breach with 30 days written notice if the breach is not cured, and prepaid fees are refunded pro rata when Corvane is in breach.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-02-24",
+  "product_version": "6.2",
+  "tags": [
+   "commercial",
+   "termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0192",
+  "question": "Do you have a mobile app?",
+  "answer": "No. Corvane Insight does not offer a native mobile app. The web application is responsive and supported on current mobile browsers.",
+  "compliance": "no",
+  "approver": "product-manager",
+  "date": "2025-01-31",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "mobile"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0193",
+  "question": "What integrations do you support?",
+  "answer": "Yes. Native connectors are available for 40 data sources, including cloud data warehouses, object storage, and relational databases.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-11-18",
+  "product_version": "5.3",
+  "tags": [
+   "product",
+   "integrations"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0194",
+  "question": "Are you GDPR compliant?",
+  "answer": "Yes. Corvane acts as a processor under GDPR and signs a Data Processing Agreement with Standard Contractual Clauses for any transfer outside the EEA.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-08-22",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "gdpr"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0195",
+  "question": "Can individual records be deleted on request?",
+  "answer": "Yes. Individual records can be deleted on request through the API, and data subject requests are completed within 30 days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-03-20",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "deletion-request"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0196",
+  "question": "How are emergency changes handled?",
+  "answer": "Yes. Production changes go through a change management process with peer review, automated deployment, and a rollback plan. Emergency changes are reviewed within 2 business days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-03-05",
+  "product_version": "6.2",
+  "tags": [
+   "secure-development",
+   "change-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0197",
+  "question": "Do sessions time out?",
+  "answer": "Yes. Web sessions expire after 30 minutes of inactivity by default, and administrators can set a value between 5 and 480 minutes.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2024-11-02",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "session-timeout"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0198",
+  "question": "Do you offer a free trial?",
+  "answer": "Yes. A 14 day free trial of the Business plan is available with sample data.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-09-01",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "trial"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0199",
+  "question": "Is the incident response plan tested?",
+  "answer": "Yes. Corvane maintains a documented incident response plan with defined severity levels, an on-call rotation, and a tabletop exercise every 6 months.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-07-14",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "ir-plan"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0200",
+  "question": "Do you hold an ISO/IEC 27001 certification?",
+  "answer": "Yes. Corvane is certified to ISO/IEC 27001:2022. The certificate covers the Corvane Insight platform and corporate IT and is valid until 2028-03-31.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-09-08",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "iso27001"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0201",
+  "question": "What is your uptime SLA?",
+  "answer": "Yes. Corvane commits to 99.9% monthly uptime for the Business plan and 99.95% for the Enterprise plan, with service credits of up to 25% of monthly fees.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-12-11",
+  "product_version": "5.3",
+  "tags": [
+   "sla-support",
+   "sla-uptime"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0202",
+  "question": "Are employee devices protected against malware?",
+  "answer": "Yes. All employee laptops run endpoint detection and response software, and files uploaded to the platform are scanned for malware.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-12-07",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "malware"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0203",
+  "question": "How long are logs retained?",
+  "answer": "Yes. Security and audit logs are retained for 13 months, with the most recent 90 days searchable online.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-07-20",
+  "product_version": "6.2",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0204",
+  "question": "Do you support BYOK?",
+  "answer": "Partial. Customer managed keys (BYOK) are available on the Enterprise plan for data at rest in the US and EU regions. Hold your own key is not supported.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2025-03-24",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "byok"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0205",
+  "question": "How often are user access rights reviewed?",
+  "answer": "Yes. Access to production systems is reviewed every 180 days by system owners, and access is revoked within 72 hours of termination.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2023-03-09",
+  "product_version": "4.6",
+  "tags": [
+   "access-control",
+   "access-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0206",
+  "question": "What are your payment terms?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 45 days.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2023-12-01",
+  "product_version": "4.6",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0207",
+  "question": "Do you follow CIS benchmarks?",
+  "answer": "Yes. Hosts run a hardened minimal Linux image built from CIS benchmarks and are replaced, not patched in place, at least every 30 days.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-02-09",
+  "product_version": "6.2",
+  "tags": [
+   "infrastructure",
+   "os-hardening"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0208",
+  "question": "How many API calls can we make?",
+  "answer": "Yes. The API allows 600 requests per minute per workspace on the Business plan and 3,000 requests per minute on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-03-20",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api-rate-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0209",
+  "question": "What is your password policy?",
+  "answer": "Yes. Local passwords must be at least 12 characters, are checked against a breached password list, and the account locks after 10 failed attempts.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-01-28",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "password"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0210",
+  "question": "Is the platform multi-tenant?",
+  "answer": "Yes. The platform is multi-tenant. Each customer workspace is isolated by a tenant id enforced in the data access layer and has a separate encryption key per tenant.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-11-30",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "multi-tenancy"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0211",
+  "question": "Do you have vulnerability remediation SLAs?",
+  "answer": "Yes. Critical vulnerabilities are remediated within 7 days, high within 30 days, and medium within 90 days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-02-19",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "patch-sla"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0212",
+  "question": "What are the storage limits?",
+  "answer": "Yes. Workspaces on the Business plan include 500 GB of storage and Enterprise plans include 5 TB, with additional storage billed per TB.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-06-21",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "storage-limits"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0213",
+  "question": "Do you conduct penetration testing?",
+  "answer": "Yes. An independent firm performs a penetration test of the platform every 6 months. An executive summary of the latest test is available under NDA.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-05-26",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "pentest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0214",
+  "question": "Do you have a data classification policy?",
+  "answer": "Yes. Corvane classifies information as Public, Internal, Confidential, or Restricted. All customer data is classified as Restricted.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-08-22",
+  "product_version": "6.2",
+  "tags": [
+   "data-protection",
+   "data-classification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0215",
+  "question": "Is customer data accessed from outside our region?",
+  "answer": "Partial. Customer data is stored only in the selected region. Support staff in the US, UK, and Portugal may access data with customer permission.",
+  "compliance": "partial",
+  "approver": "legal-counsel",
+  "date": "2025-07-09",
+  "product_version": "6.0",
+  "tags": [
+   "vendor-management",
+   "offshore"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0216",
+  "question": "Do you use static analysis?",
+  "answer": "Yes. Every code change requires review and approval by a second engineer, and automated tests and static analysis must pass before merge.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-12-24",
+  "product_version": "5.3",
+  "tags": [
+   "secure-development",
+   "code-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0217",
+  "question": "What integrations do you support?",
+  "answer": "Yes. Native connectors are available for 40 data sources, including cloud data warehouses, object storage, and relational databases.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-04-27",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "integrations"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0218",
+  "question": "Do you offer service credits?",
+  "answer": "Yes. Corvane commits to 99.9% monthly uptime for the Business plan and 99.95% for the Enterprise plan, with service credits of up to 25% of monthly fees.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-04-11",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "sla-uptime"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0219",
+  "question": "Do you use subprocessors?",
+  "answer": "Yes. Corvane uses 9 subprocessors. The current list is published on the trust center, and customers are notified 30 days before a new subprocessor is added.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-04-29",
+  "product_version": "6.0",
+  "tags": [
+   "vendor-management",
+   "subprocessors"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0220",
+  "question": "What is your log retention period?",
+  "answer": "Yes. Security and audit logs are retained for 13 months, with the most recent 90 days searchable online.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-07-21",
+  "product_version": "6.0",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0221",
+  "question": "In what formats can data be exported?",
+  "answer": "Yes. Administrators can export all workspace data at any time in CSV or Parquet format through the console or the export API.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-05-18",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-export"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0222",
+  "question": "What is your password policy?",
+  "answer": "Yes. Local passwords must be at least 12 characters, are checked against a breached password list, and the account locks after 10 failed attempts.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-07-04",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "password"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0223",
+  "question": "Do you operate a security operations center?",
+  "answer": "Yes. Security events are monitored 24 hours a day by an internal security operations team using a SIEM with automated alerting.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-02-21",
+  "product_version": "6.2",
+  "tags": [
+   "logging",
+   "monitoring"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0224",
+  "question": "How often is customer data backed up?",
+  "answer": "Yes. Customer data is backed up every 24 hours and backups are retained for 30 days.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2023-04-03",
+  "product_version": "4.6",
+  "tags": [
+   "business-continuity",
+   "backups"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0225",
+  "question": "Does the application support SAML single sign-on?",
+  "answer": "Yes. Corvane Insight supports SAML 2.0 and OpenID Connect single sign-on with any compliant identity provider.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-09-30",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "sso"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0226",
+  "question": "Do you have a data classification policy?",
+  "answer": "Yes. Corvane classifies information as Public, Internal, Confidential, or Restricted. All customer data is classified as Restricted.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-09-19",
+  "product_version": "5.3",
+  "tags": [
+   "data-protection",
+   "data-classification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0227",
+  "question": "How long do you retain customer data after termination?",
+  "answer": "Yes. Customer data is deleted within 90 days after contract termination.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2023-03-20",
+  "product_version": "4.6",
+  "tags": [
+   "data-protection",
+   "retention-termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0228",
+  "question": "Do you have a status page?",
+  "answer": "Yes. A public status page shows current availability and incident history, and customers can subscribe to email or webhook notifications.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-01-11",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "status-page"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0229",
+  "question": "What encryption is used for stored data?",
+  "answer": "Yes. All customer data is encrypted at rest with AES-256, including databases, object storage, and backups.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2025-02-01",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "enc-rest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0230",
+  "question": "Are staff bound by confidentiality agreements?",
+  "answer": "Yes. All employees and contractors sign confidentiality agreements before they receive system access.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-06-23",
+  "product_version": "6.2",
+  "tags": [
+   "hr-security",
+   "confidentiality"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0231",
+  "question": "Do you have a SOC 2 report?",
+  "answer": "Yes. Corvane holds a SOC 2 Type II report covering the Security, Availability, and Confidentiality criteria. The latest audit period ended 2026-06-30 and the report is shared under NDA.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-11-03",
+  "product_version": "5.3",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0232",
+  "question": "What is your pricing model?",
+  "answer": "Yes. Corvane Insight is priced per named user per year, with 3 plans: Team, Business, and Enterprise. Volume discounts start at 100 users.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-11-12",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "pricing-model"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0233",
+  "question": "What permission model does the application use?",
+  "answer": "Yes. The platform provides role-based access control with 5 built-in roles, and custom roles are available on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2026-06-21",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "rbac"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0234",
+  "question": "How much can prices rise at renewal?",
+  "answer": "Yes. Renewal price increases are capped at 7% per year for multi-year agreements.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-03-01",
+  "product_version": "5.3",
+  "tags": [
+   "commercial",
+   "price-increase"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0235",
+  "question": "Which browsers are supported?",
+  "answer": "Yes. The latest two versions of all major desktop browsers are supported.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-10-26",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "browsers"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0236",
+  "question": "How are invoices issued?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 45 days.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2023-12-22",
+  "product_version": "4.6",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0237",
+  "question": "What are your support hours?",
+  "answer": "Yes. Standard support is available 9am to 6pm on business days. Enterprise customers get 24x7 support for Severity 1 issues.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-03-24",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "support-hours"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0238",
+  "question": "Can we export our data?",
+  "answer": "Yes. Administrators can export all workspace data at any time in CSV or Parquet format through the console or the export API.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-01-25",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-export"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0239",
+  "question": "Do employees receive security awareness training?",
+  "answer": "Yes. All staff complete security awareness training at hire and every 12 months, engineers complete secure coding training every 12 months, and phishing simulations run monthly.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-11-27",
+  "product_version": "5.3",
+  "tags": [
+   "hr-security",
+   "security-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0240",
+  "question": "Disclose any breaches in recent years.",
+  "answer": "No. Corvane has not had a security breach involving customer data in the last 5 years.",
+  "compliance": "no",
+  "approver": "legal-counsel",
+  "date": "2025-07-09",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "breach-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0241",
+  "question": "How often are encryption keys rotated?",
+  "answer": "Yes. Encryption keys are managed in a cloud key management service backed by FIPS 140-2 Level 3 hardware security modules and are rotated every 12 months.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-12-08",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "key-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0242",
+  "question": "Which version of ISO 27001 are you certified against?",
+  "answer": "Yes. Corvane is certified to ISO/IEC 27001:2022. The certificate covers the Corvane Insight platform and corporate IT and is valid until 2028-03-31.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-03-04",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "iso27001"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0243",
+  "question": "Which infrastructure provider hosts the platform?",
+  "answer": "Yes. Corvane Insight runs on a major public cloud provider across multiple availability zones in each region. Corvane does not operate its own data centers.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-06-13",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "hosting"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0244",
+  "question": "Can audit logs be exported to our SIEM?",
+  "answer": "Yes. The customer audit log records logins, permission changes, exports, and API key events, and can be streamed to a SIEM through a webhook or downloaded as JSON.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-05-29",
+  "product_version": "6.0",
+  "tags": [
+   "logging",
+   "audit-log"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0245",
+  "question": "Do you have DDoS protection?",
+  "answer": "Yes. DDoS protection is provided at the network edge by the cloud provider and the content delivery network, with rate limiting at the API gateway.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2024-09-19",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "ddos"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0246",
+  "question": "Do you have native connectors?",
+  "answer": "Yes. Native connectors are available for 40 data sources, including cloud data warehouses, object storage, and relational databases.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-10-08",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "integrations"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0247",
+  "question": "How quickly will you notify us of a breach?",
+  "answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 72 hours.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2023-09-05",
+  "product_version": "4.6",
+  "tags": [
+   "incident-response",
+   "breach-notification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0248",
+  "question": "How quickly is access removed when an employee leaves?",
+  "answer": "Yes. Access to production systems is reviewed every 90 days by system owners, and access is revoked within 24 hours of termination.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-06-14",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "access-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0249",
+  "question": "How often are user access rights reviewed?",
+  "answer": "Yes. Access to production systems is reviewed every 90 days by system owners, and access is revoked within 24 hours of termination.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-09-10",
+  "product_version": "6.2",
+  "tags": [
+   "access-control",
+   "access-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0250",
+  "question": "Are customer managed keys supported?",
+  "answer": "Partial. Customer managed keys (BYOK) are available on the Enterprise plan for data at rest in the US and EU regions. Hold your own key is not supported.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2026-05-14",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "byok"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0251",
+  "question": "Can we define custom user roles?",
+  "answer": "Yes. The platform provides role-based access control with 5 built-in roles, and custom roles are available on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-01-01",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "rbac"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0252",
+  "question": "What are the termination terms?",
+  "answer": "Yes. Either party may terminate for material breach with 30 days written notice if the breach is not cured, and prepaid fees are refunded pro rata when Corvane is in breach.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-04-10",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "termination"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0253",
+  "question": "Is the service certified for PCI DSS?",
+  "answer": "No. Corvane Insight is not in scope for PCI DSS and customers must not upload cardholder data. Payments to Corvane are handled by a PCI DSS Level 1 payment subprocessor.",
+  "compliance": "no",
+  "approver": "product-manager",
+  "date": "2026-02-23",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "pci"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0254",
+  "question": "How are invoices issued?",
+  "answer": "Yes. Invoices are issued annually in advance and payment terms are net 30 days.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-05-03",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "payment-terms"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0255",
+  "question": "Do you use anti-malware software?",
+  "answer": "Yes. All employee laptops run endpoint detection and response software, and files uploaded to the platform are scanned for malware.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-09-21",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "malware"
+  ],
+  "status": "draft",
+  "provenance": {}
+ },
+ {
+  "id": "A-0256",
+  "question": "Do you have an incident response plan?",
+  "answer": "Yes. Corvane maintains a documented incident response plan with defined severity levels, an on-call rotation, and a tabletop exercise every 6 months.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-04-12",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "ir-plan"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0257",
+  "question": "Do you provide an API?",
+  "answer": "Yes. Corvane Insight provides a REST API documented with OpenAPI 3.1, authenticated with scoped API keys or OAuth 2.0 client credentials.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-01-23",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "api"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0258",
+  "question": "Do you offer volume discounts?",
+  "answer": "Yes. Corvane Insight is priced per named user per year, with 3 plans: Team, Business, and Enterprise. Volume discounts start at 100 users.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-12-05",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "pricing-model"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0259",
+  "question": "How long are logs retained?",
+  "answer": "Yes. Security and audit logs are retained for 6 months.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2023-06-12",
+  "product_version": "4.6",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0260",
+  "question": "Do you support SSO?",
+  "answer": "Yes. Corvane Insight supports SAML 2.0 and OpenID Connect single sign-on with any compliant identity provider.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-09-29",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "sso"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0261",
+  "question": "How often are third-party penetration tests performed?",
+  "answer": "Yes. An independent firm performs a penetration test of the platform every 12 months.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2023-09-11",
+  "product_version": "4.6",
+  "tags": [
+   "vulnerability-management",
+   "pentest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0262",
+  "question": "What is your uptime SLA?",
+  "answer": "Yes. Corvane commits to 99.9% monthly uptime for the Business plan and 99.95% for the Enterprise plan, with service credits of up to 25% of monthly fees.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-08-10",
+  "product_version": "6.2",
+  "tags": [
+   "sla-support",
+   "sla-uptime"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0263",
+  "question": "Are backups encrypted?",
+  "answer": "Yes. All customer data is encrypted at rest with AES-256, including databases, object storage, and backups.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-02-24",
+  "product_version": "6.0",
+  "tags": [
+   "encryption",
+   "enc-rest"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0264",
+  "question": "Do you comply with the EU General Data Protection Regulation?",
+  "answer": "Yes. Corvane acts as a processor under GDPR and signs a Data Processing Agreement with Standard Contractual Clauses for any transfer outside the EEA.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-12-30",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "gdpr"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0265",
+  "question": "What data classification levels do you use?",
+  "answer": "Yes. Corvane classifies information as Public, Internal, Confidential, or Restricted. All customer data is classified as Restricted.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-09-29",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-classification"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0266",
+  "question": "Do you allow customer audits?",
+  "answer": "Partial. Customers may review our SOC 2 report and send one security questionnaire per year. On-site audits are available to Enterprise customers with 30 days notice.",
+  "compliance": "partial",
+  "approver": "privacy-officer",
+  "date": "2025-03-19",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "audit-rights"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0267",
+  "question": "Do you assess the security of your vendors?",
+  "answer": "Yes. Vendors with access to customer data are assessed before onboarding and reviewed every 12 months, including a review of their SOC 2 or ISO 27001 report.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-10-18",
+  "product_version": "5.3",
+  "tags": [
+   "vendor-management",
+   "vendor-risk"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0268",
+  "question": "Is data encrypted in transit?",
+  "answer": "Yes. All connections use TLS 1.2 or higher, and TLS 1.3 is preferred. Older protocols are disabled.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-01-08",
+  "product_version": "6.2",
+  "tags": [
+   "encryption",
+   "enc-transit"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0269",
+  "question": "Can you share a software bill of materials?",
+  "answer": "Yes. A software bill of materials is generated for every release in CycloneDX format and is available to Enterprise customers on request.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-12-31",
+  "product_version": "6.0",
+  "tags": [
+   "secure-development",
+   "sbom"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0270",
+  "question": "What is your uptime SLA?",
+  "answer": "Yes. Corvane commits to 99.5% monthly uptime for all plans.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2022-09-12",
+  "product_version": "4.1",
+  "tags": [
+   "sla-support",
+   "sla-uptime"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0271",
+  "question": "Is the product accessible?",
+  "answer": "Partial. The web application targets WCAG 2.1 AA. A third-party audit in 2026 found 4 open issues, which are scheduled for remediation.",
+  "compliance": "partial",
+  "approver": "privacy-officer",
+  "date": "2026-06-09",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "accessibility"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0272",
+  "question": "Do you use customer data to train AI models?",
+  "answer": "No. Corvane does not use customer data to train machine learning models, and no customer data is sent to a third-party model provider unless the customer enables the AI assistant.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2025-05-23",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "ai-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0273",
+  "question": "What is your log retention period?",
+  "answer": "Yes. Security and audit logs are retained for 6 months.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2023-07-03",
+  "product_version": "4.6",
+  "tags": [
+   "logging",
+   "log-retention"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0274",
+  "question": "Is there a separate liability cap for data breaches?",
+  "answer": "Partial. Liability is capped at 12 months of fees paid. Uncapped liability is not offered, but a higher cap of 2 times annual fees for data breaches is available on Enterprise agreements.",
+  "compliance": "partial",
+  "approver": "grc-analyst",
+  "date": "2025-11-17",
+  "product_version": "6.0",
+  "tags": [
+   "commercial",
+   "liability"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0275",
+  "question": "How is privileged access to production controlled?",
+  "answer": "Yes. Engineers have no standing production access. Access is granted just in time for up to 4 hours, requires a ticket and peer approval, and every session is recorded.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2024-09-15",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "privileged-access"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0276",
+  "question": "When was the last DR test?",
+  "answer": "Yes. The disaster recovery plan is tested every 12 months with a full regional failover exercise. The last test was completed on 2026-04-14.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-05-20",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "dr-test"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0277",
+  "question": "How do you mitigate denial of service attacks?",
+  "answer": "Yes. DDoS protection is provided at the network edge by the cloud provider and the content delivery network, with rate limiting at the API gateway.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-06-05",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "ddos"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0278",
+  "question": "Is customer data copied to non-production environments?",
+  "answer": "No. Production customer data is never copied into development or test environments. Engineers use synthetic data sets.",
+  "compliance": "no",
+  "approver": "product-manager",
+  "date": "2025-04-23",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "test-data"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0279",
+  "question": "Which data sources can be connected?",
+  "answer": "Yes. Native connectors are available for 40 data sources, including cloud data warehouses, object storage, and relational databases.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-10-05",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "integrations"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0280",
+  "question": "Do you operate your own data centers?",
+  "answer": "Yes. Corvane Insight runs on a major public cloud provider across multiple availability zones in each region. Corvane does not operate its own data centers.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2024-12-01",
+  "product_version": "5.3",
+  "tags": [
+   "infrastructure",
+   "hosting"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0281",
+  "question": "Do you have a change management process?",
+  "answer": "Yes. Production changes go through a change management process with peer review, automated deployment, and a rollback plan. Emergency changes are reviewed within 2 business days.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-05-09",
+  "product_version": "6.2",
+  "tags": [
+   "secure-development",
+   "change-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0282",
+  "question": "What was your uptime over the last year?",
+  "answer": "Yes. Measured availability over the last 12 months was 99.97%. Historical uptime is published on the public status page.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-12-01",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "uptime-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0283",
+  "question": "Where is customer data stored?",
+  "answer": "Yes. Customers choose one of 2 hosting regions at signup: US (Virginia) or EU (Frankfurt).",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2024-01-18",
+  "product_version": "5.3",
+  "tags": [
+   "data-protection",
+   "data-residency"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0284",
+  "question": "Does the product include AI features?",
+  "answer": "Yes. The optional AI assistant answers questions about dashboards. It is off by default, an administrator must enable it, and prompts are not retained by the model provider.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-01-09",
+  "product_version": "6.0",
+  "tags": [
+   "product",
+   "ai-assistant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0285",
+  "question": "How quickly do you process a right to erasure request?",
+  "answer": "Yes. Individual records can be deleted on request through the API, and data subject requests are completed within 30 days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-09-01",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "deletion-request"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0286",
+  "question": "Do you support SCIM?",
+  "answer": "Yes. User provisioning and deprovisioning are supported through SCIM 2.0 on the Business and Enterprise plans.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-08-19",
+  "product_version": "6.0",
+  "tags": [
+   "access-control",
+   "scim"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0287",
+  "question": "Can we test changes outside production?",
+  "answer": "Yes. Enterprise customers receive 1 non-production sandbox workspace for testing, refreshed on request.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-07-01",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "sandbox"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0288",
+  "question": "What are your RPO and RTO?",
+  "answer": "Yes. The recovery point objective is 1 hour and the recovery time objective is 4 hours.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-08-18",
+  "product_version": "6.2",
+  "tags": [
+   "business-continuity",
+   "rpo-rto"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0289",
+  "question": "Do you have a SOC 2 report?",
+  "answer": "Yes. Corvane holds a SOC 2 Type II report covering the Security, Availability, and Confidentiality criteria. The latest audit period ended 2026-06-30 and the report is shared under NDA.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-10-16",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "soc2"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0290",
+  "question": "Do you offer EU data residency?",
+  "answer": "Yes. Customers choose one of 3 hosting regions at signup: US (Virginia), EU (Frankfurt), or UK (London). Customer data stays in the selected region.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2026-01-12",
+  "product_version": "6.2",
+  "tags": [
+   "data-protection",
+   "data-residency"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0291",
+  "question": "Do you have a third-party risk management program?",
+  "answer": "Yes. Vendors with access to customer data are assessed before onboarding and reviewed every 12 months, including a review of their SOC 2 or ISO 27001 report.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-06-22",
+  "product_version": "6.0",
+  "tags": [
+   "vendor-management",
+   "vendor-risk"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0292",
+  "question": "Do you have a responsible disclosure policy?",
+  "answer": "Yes. Corvane runs a public vulnerability disclosure program and a private bug bounty program managed by an external platform.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2025-04-24",
+  "product_version": "6.0",
+  "tags": [
+   "vulnerability-management",
+   "bug-bounty"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0293",
+  "question": "How are production changes approved?",
+  "answer": "Yes. Production changes go through a change management process with peer review, automated deployment, and a rollback plan. Emergency changes are reviewed within 2 business days.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2024-09-11",
+  "product_version": "5.3",
+  "tags": [
+   "secure-development",
+   "change-mgmt"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0294",
+  "question": "Do you retain an incident response firm?",
+  "answer": "Yes. Corvane keeps an external incident response firm on retainer and preserves forensic evidence for at least 12 months after an incident.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-10-04",
+  "product_version": "6.0",
+  "tags": [
+   "incident-response",
+   "forensics"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0295",
+  "question": "Will you sign a BAA?",
+  "answer": "Partial. Corvane signs a Business Associate Agreement for customers on the Enterprise plan only. HIPAA workloads must run in the US region.",
+  "compliance": "partial",
+  "approver": "solutions-architect",
+  "date": "2026-10-08",
+  "product_version": "6.2",
+  "tags": [
+   "compliance",
+   "hipaa"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0296",
+  "question": "Which browsers are supported?",
+  "answer": "Yes. The latest two versions of all major desktop browsers are supported.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2026-09-20",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "browsers"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0297",
+  "question": "Describe your secure development lifecycle.",
+  "answer": "Yes. Every code change requires review and approval by a second engineer, and automated tests and static analysis must pass before merge.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-11-22",
+  "product_version": "6.0",
+  "tags": [
+   "secure-development",
+   "code-review"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0298",
+  "question": "Are uploaded files scanned for viruses?",
+  "answer": "Yes. All employee laptops run endpoint detection and response software, and files uploaded to the platform are scanned for malware.",
+  "compliance": "yes",
+  "approver": "solutions-architect",
+  "date": "2026-03-26",
+  "product_version": "6.2",
+  "tags": [
+   "vulnerability-management",
+   "malware"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0299",
+  "question": "What are your support response times?",
+  "answer": "Yes. Severity 1 issues receive a response within 1 hour for Enterprise customers and within 4 hours for Business customers.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-06-03",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "response-times"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0300",
+  "question": "Will our data be shared with AI model providers?",
+  "answer": "No. Corvane does not use customer data to train machine learning models, and no customer data is sent to a third-party model provider unless the customer enables the AI assistant.",
+  "compliance": "no",
+  "approver": "solutions-architect",
+  "date": "2026-07-25",
+  "product_version": "6.2",
+  "tags": [
+   "data-protection",
+   "ai-training"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0301",
+  "question": "Describe your application architecture.",
+  "answer": "Yes. The platform consists of a web application, a REST API, a query engine, and a columnar storage layer, deployed as containers on managed Kubernetes.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-07-10",
+  "product_version": "6.0",
+  "tags": [
+   "infrastructure",
+   "architecture"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0302",
+  "question": "Do you support role-based access control?",
+  "answer": "Yes. The platform provides role-based access control with 5 built-in roles, and custom roles are available on the Enterprise plan.",
+  "compliance": "yes",
+  "approver": "privacy-officer",
+  "date": "2024-11-26",
+  "product_version": "5.3",
+  "tags": [
+   "access-control",
+   "rbac"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0303",
+  "question": "Is 24x7 support available?",
+  "answer": "Yes. Standard support is available 9am to 6pm on business days. Enterprise customers get 24x7 support for Severity 1 issues.",
+  "compliance": "yes",
+  "approver": "security-lead",
+  "date": "2025-07-17",
+  "product_version": "6.0",
+  "tags": [
+   "sla-support",
+   "support-hours"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0304",
+  "question": "Are prompts to the AI assistant retained?",
+  "answer": "Yes. The optional AI assistant answers questions about dashboards. It is off by default, an administrator must enable it, and prompts are not retained by the model provider.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2026-03-18",
+  "product_version": "6.2",
+  "tags": [
+   "product",
+   "ai-assistant"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0305",
+  "question": "Where is customer data stored?",
+  "answer": "Yes. Customers choose one of 3 hosting regions at signup: US (Virginia), EU (Frankfurt), or UK (London). Customer data stays in the selected region.",
+  "compliance": "yes",
+  "approver": "legal-counsel",
+  "date": "2025-02-14",
+  "product_version": "6.0",
+  "tags": [
+   "data-protection",
+   "data-residency"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0306",
+  "question": "Will you sign a DPA?",
+  "answer": "Yes. Corvane acts as a processor under GDPR and signs a Data Processing Agreement with Standard Contractual Clauses for any transfer outside the EEA.",
+  "compliance": "yes",
+  "approver": "grc-analyst",
+  "date": "2025-09-08",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "gdpr"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0307",
+  "question": "Can we perform an on-site audit of your facilities?",
+  "answer": "Partial. Customers may review our SOC 2 report and send one security questionnaire per year. On-site audits are available to Enterprise customers with 30 days notice.",
+  "compliance": "partial",
+  "approver": "legal-counsel",
+  "date": "2025-05-04",
+  "product_version": "6.0",
+  "tags": [
+   "compliance",
+   "audit-rights"
+  ],
+  "status": "approved",
+  "provenance": {}
+ },
+ {
+  "id": "A-0308",
+  "question": "Can you share historical availability?",
+  "answer": "Yes. Measured availability over the last 12 months was 99.97%. Historical uptime is published on the public status page.",
+  "compliance": "yes",
+  "approver": "product-manager",
+  "date": "2025-05-28",
+  "product_version": "6.0",
+  "tags": [
+   "business-continuity",
+   "uptime-history"
+  ],
+  "status": "approved",
+  "provenance": {}
+ }
+]

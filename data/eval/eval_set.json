@@ -1,0 +1,1368 @@
+{
+ "seed": 7,
+ "outdated_ids": [
+  "A-0001",
+  "A-0004",
+  "A-0008",
+  "A-0037",
+  "A-0055",
+  "A-0066",
+  "A-0073",
+  "A-0080",
+  "A-0100",
+  "A-0120",
+  "A-0132",
+  "A-0150",
+  "A-0156",
+  "A-0166",
+  "A-0205",
+  "A-0206",
+  "A-0224",
+  "A-0227",
+  "A-0234",
+  "A-0236",
+  "A-0247",
+  "A-0259",
+  "A-0261",
+  "A-0270",
+  "A-0273",
+  "A-0283"
+ ],
+ "contradictory_ids": [
+  "A-0288"
+ ],
+ "items": [
+  {
+   "id": "ev-soc2",
+   "question": "Please confirm whether an independent SOC 2 attestation exists and which trust criteria it covers.",
+   "section": "Compliance",
+   "answerable": true,
+   "gold_facts": [
+    "SOC 2 Type II"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0031",
+    "A-0157",
+    "A-0231",
+    "A-0289",
+    "pol-compliance-program#1"
+   ],
+   "gold_answer": "Yes. Corvane holds a SOC 2 Type II report covering the Security, Availability, and Confidentiality criteria. The latest audit period ended 2026-06-30 and the report is shared under NDA."
+  },
+  {
+   "id": "ev-iso27001",
+   "question": "Is your information security program certified under ISO 27001, and which version?",
+   "section": "Compliance",
+   "answerable": true,
+   "gold_facts": [
+    "27001:2022"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0169",
+    "A-0200",
+    "A-0242",
+    "pol-compliance-program#2"
+   ],
+   "gold_answer": "Yes. Corvane is certified to ISO/IEC 27001:2022. The certificate covers the Corvane Insight platform and corporate IT and is valid until 2028-03-31."
+  },
+  {
+   "id": "ev-hipaa",
+   "question": "Is the platform suitable for HIPAA protected health information, and will you sign a business associate agreement?",
+   "section": "Compliance",
+   "answerable": true,
+   "gold_facts": [
+    "Business Associate Agreement",
+    "Enterprise"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0010",
+    "A-0189",
+    "A-0190",
+    "A-0295",
+    "pol-compliance-program#3"
+   ],
+   "gold_answer": "Partial. Corvane signs a Business Associate Agreement for customers on the Enterprise plan only. HIPAA workloads must run in the US region."
+  },
+  {
+   "id": "ev-pci",
+   "question": "May we load payment card data into the service, and is it covered by PCI DSS?",
+   "section": "Compliance",
+   "answerable": true,
+   "gold_facts": [
+    "not in scope for PCI DSS"
+   ],
+   "gold_compliance": "no",
+   "gold_sources": [
+    "A-0094",
+    "A-0133",
+    "A-0135",
+    "A-0253",
+    "pol-compliance-program#4"
+   ],
+   "gold_answer": "No. Corvane Insight is not in scope for PCI DSS and customers must not upload cardholder data. Payments to Corvane are handled by a PCI DSS Level 1 payment subprocessor."
+  },
+  {
+   "id": "ev-pentest",
+   "question": "How frequently does an outside firm run a penetration test against the application?",
+   "section": "Vulnerability Management",
+   "answerable": true,
+   "gold_facts": [
+    "6 months"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0097",
+    "A-0131",
+    "A-0213",
+    "pol-vuln-mgmt#1"
+   ],
+   "gold_answer": "Yes. An independent firm performs a penetration test of the platform every 6 months. An executive summary of the latest test is available under NDA."
+  },
+  {
+   "id": "ev-audit-rights",
+   "question": "Will you permit our auditors to perform an on-site audit of your controls?",
+   "section": "Compliance",
+   "answerable": true,
+   "gold_facts": [
+    "30 days"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0126",
+    "A-0266",
+    "A-0307",
+    "legal-msa#1"
+   ],
+   "gold_answer": "Partial. Customers may review our SOC 2 report and send one security questionnaire per year. On-site audits are available to Enterprise customers with 30 days notice."
+  },
+  {
+   "id": "ev-sso",
+   "question": "Is federated single sign-on through our identity provider available?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "SAML 2.0"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0103",
+    "A-0160",
+    "A-0225",
+    "A-0260",
+    "prod-sso-scim#1"
+   ],
+   "gold_answer": "Yes. Corvane Insight supports SAML 2.0 and OpenID Connect single sign-on with any compliant identity provider."
+  },
+  {
+   "id": "ev-scim",
+   "question": "How are user provisioning changes synced from our directory into your product?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "SCIM 2.0"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0093",
+    "A-0107",
+    "A-0286",
+    "prod-sso-scim#2"
+   ],
+   "gold_answer": "Yes. User provisioning and deprovisioning are supported through SCIM 2.0 on the Business and Enterprise plans."
+  },
+  {
+   "id": "ev-rbac",
+   "question": "How granular are the role-based permissions for different kinds of users?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "5 built-in roles"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0042",
+    "A-0233",
+    "A-0251",
+    "A-0302",
+    "pol-access-control#2"
+   ],
+   "gold_answer": "Yes. The platform provides role-based access control with 5 built-in roles, and custom roles are available on the Enterprise plan."
+  },
+  {
+   "id": "ev-access-review",
+   "question": "How frequently are production access rights reviewed, and how fast is access revoked at termination?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "90 days",
+    "24 hours"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0053",
+    "A-0158",
+    "A-0248",
+    "A-0249",
+    "pol-access-control#3"
+   ],
+   "gold_answer": "Yes. Access to production systems is reviewed every 90 days by system owners, and access is revoked within 24 hours of termination."
+  },
+  {
+   "id": "ev-password",
+   "question": "Explain the password rules for accounts that do not use single sign-on.",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "12 characters"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0005",
+    "A-0032",
+    "A-0209",
+    "A-0222",
+    "pol-access-control#4"
+   ],
+   "gold_answer": "Yes. Local passwords must be at least 12 characters, are checked against a breached password list, and the account locks after 10 failed attempts."
+  },
+  {
+   "id": "ev-privileged-access",
+   "question": "Explain the approval process before engineers can access production environments.",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "4 hours"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0075",
+    "A-0099",
+    "A-0123",
+    "A-0275",
+    "pol-access-control#5"
+   ],
+   "gold_answer": "Yes. Engineers have no standing production access. Access is granted just in time for up to 4 hours, requires a ticket and peer approval, and every session is recorded."
+  },
+  {
+   "id": "ev-support-access",
+   "question": "Under what conditions can your support staff access our workspace?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "time-limited access"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0027",
+    "A-0054",
+    "A-0154",
+    "A-0168",
+    "pol-access-control#6"
+   ],
+   "gold_answer": "Yes. Corvane support staff can open a customer workspace only after the customer grants time-limited access from the admin console, and every action is written to the customer audit log."
+  },
+  {
+   "id": "ev-session-timeout",
+   "question": "After how long does an inactive session expire?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "30 minutes"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0163",
+    "A-0188",
+    "A-0197",
+    "pol-access-control#7"
+   ],
+   "gold_answer": "Yes. Web sessions expire after 30 minutes of inactivity by default, and administrators can set a value between 5 and 480 minutes."
+  },
+  {
+   "id": "ev-ip-allowlist",
+   "question": "Is it possible to restrict sign-ins to our office IP ranges?",
+   "section": "Access Control",
+   "answerable": true,
+   "gold_facts": [
+    "50 IP ranges"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0012",
+    "A-0117",
+    "A-0178",
+    "A-0182",
+    "prod-admin-console#1"
+   ],
+   "gold_answer": "Yes. Enterprise administrators can restrict workspace access to a list of up to 50 IP ranges."
+  },
+  {
+   "id": "ev-enc-transit",
+   "question": "What TLS protocol versions protect data moving between our users and your service?",
+   "section": "Encryption",
+   "answerable": true,
+   "gold_facts": [
+    "TLS 1.2"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0071",
+    "A-0174",
+    "A-0268",
+    "pol-encryption#2"
+   ],
+   "gold_answer": "Yes. All connections use TLS 1.2 or higher, and TLS 1.3 is preferred. Older protocols are disabled."
+  },
+  {
+   "id": "ev-key-mgmt",
+   "question": "Describe the management and rotation of the encryption keys that protect our data.",
+   "section": "Encryption",
+   "answerable": true,
+   "gold_facts": [
+    "12 months"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0050",
+    "A-0059",
+    "A-0176",
+    "A-0241",
+    "pol-key-mgmt#1"
+   ],
+   "gold_answer": "Yes. Encryption keys are managed in a cloud key management service backed by FIPS 140-2 Level 3 hardware security modules and are rotated every 12 months."
+  },
+  {
+   "id": "ev-byok",
+   "question": "Can we control the encryption keys that protect our stored data with our own keys?",
+   "section": "Encryption",
+   "answerable": true,
+   "gold_facts": [
+    "Enterprise"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0153",
+    "A-0204",
+    "A-0250",
+    "pol-key-mgmt#2"
+   ],
+   "gold_answer": "Partial. Customer managed keys (BYOK) are available on the Enterprise plan for data at rest in the US and EU regions. Hold your own key is not supported."
+  },
+  {
+   "id": "ev-retention-termination",
+   "question": "Describe your data deletion timeline once our contract terminates.",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "30 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0016",
+    "A-0181",
+    "A-0184",
+    "pol-data-retention#1"
+   ],
+   "gold_answer": "Yes. Customer data is deleted within 30 days after contract termination, and deletion from backups completes within a further 35 days."
+  },
+  {
+   "id": "ev-log-retention",
+   "question": "For what period are security and audit logs kept?",
+   "section": "Logging",
+   "answerable": true,
+   "gold_facts": [
+    "13 months"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0068",
+    "A-0183",
+    "A-0203",
+    "A-0220",
+    "pol-logging#1"
+   ],
+   "gold_answer": "Yes. Security and audit logs are retained for 13 months, with the most recent 90 days searchable online."
+  },
+  {
+   "id": "ev-data-export",
+   "question": "If we leave, how do we export a complete copy of our data?",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "Parquet"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0164",
+    "A-0221",
+    "A-0238",
+    "prod-data-export#1"
+   ],
+   "gold_answer": "Yes. Administrators can export all workspace data at any time in CSV or Parquet format through the console or the export API."
+  },
+  {
+   "id": "ev-data-residency",
+   "question": "In which hosting regions can our data be stored?",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "3 hosting regions"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0146",
+    "A-0290",
+    "A-0305",
+    "arch-regions#1"
+   ],
+   "gold_answer": "Yes. Customers choose one of 3 hosting regions at signup: US (Virginia), EU (Frankfurt), or UK (London). Customer data stays in the selected region."
+  },
+  {
+   "id": "ev-deletion-request",
+   "question": "How are requests from individuals to delete their personal records fulfilled?",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "30 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0002",
+    "A-0143",
+    "A-0195",
+    "A-0285",
+    "pol-privacy#2"
+   ],
+   "gold_answer": "Yes. Individual records can be deleted on request through the API, and data subject requests are completed within 30 days."
+  },
+  {
+   "id": "ev-data-classification",
+   "question": "What classification level applies internally to customer data we upload?",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "Restricted"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0116",
+    "A-0214",
+    "A-0226",
+    "A-0265",
+    "pol-data-classification#1"
+   ],
+   "gold_answer": "Yes. Corvane classifies information as Public, Internal, Confidential, or Restricted. All customer data is classified as Restricted."
+  },
+  {
+   "id": "ev-ai-training",
+   "question": "Will anything we upload be used to train machine learning models?",
+   "section": "Data Protection",
+   "answerable": true,
+   "gold_facts": [
+    "does not use customer data to train"
+   ],
+   "gold_compliance": "no",
+   "gold_sources": [
+    "A-0108",
+    "A-0272",
+    "A-0300",
+    "pol-ai-use#1"
+   ],
+   "gold_answer": "No. Corvane does not use customer data to train machine learning models, and no customer data is sent to a third-party model provider unless the customer enables the AI assistant."
+  },
+  {
+   "id": "ev-hosting",
+   "question": "Describe the hosting environment and data centers for the production service.",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "availability zones"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0111",
+    "A-0151",
+    "A-0243",
+    "A-0280",
+    "arch-overview#1"
+   ],
+   "gold_answer": "Yes. Corvane Insight runs on a major public cloud provider across multiple availability zones in each region. Corvane does not operate its own data centers."
+  },
+  {
+   "id": "ev-multi-tenancy",
+   "question": "What prevents another tenant from seeing our records in a multi-tenant environment?",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "separate encryption key per tenant"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0044",
+    "A-0140",
+    "A-0210",
+    "arch-overview#2"
+   ],
+   "gold_answer": "Yes. The platform is multi-tenant. Each customer workspace is isolated by a tenant id enforced in the data access layer and has a separate encryption key per tenant."
+  },
+  {
+   "id": "ev-single-tenant",
+   "question": "Can we get a dedicated single-tenant instance or an on-premises install?",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "single-tenant"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0028",
+    "A-0083",
+    "A-0161",
+    "arch-deployment-options#1"
+   ],
+   "gold_answer": "Partial. A dedicated single-tenant deployment is available on the Enterprise plan for an additional fee. On-premises deployment is not offered."
+  },
+  {
+   "id": "ev-network-security",
+   "question": "Which network controls, such as a firewall, protect the production servers?",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "web application firewall"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0091",
+    "A-0110",
+    "A-0121",
+    "A-0159",
+    "arch-network#1"
+   ],
+   "gold_answer": "Yes. Production runs in private subnets with no public IP addresses. Only load balancers are internet-facing, and a web application firewall filters all inbound traffic."
+  },
+  {
+   "id": "ev-ddos",
+   "question": "How is the service protected if an attacker floods it with a denial of service attack?",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "rate limiting"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0072",
+    "A-0245",
+    "A-0277",
+    "arch-network#2"
+   ],
+   "gold_answer": "Yes. DDoS protection is provided at the network edge by the cloud provider and the content delivery network, with rate limiting at the API gateway."
+  },
+  {
+   "id": "ev-os-hardening",
+   "question": "How do you keep server operating systems hardened and patched?",
+   "section": "Infrastructure",
+   "answerable": true,
+   "gold_facts": [
+    "30 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0041",
+    "A-0090",
+    "A-0207",
+    "arch-hosts#1"
+   ],
+   "gold_answer": "Yes. Hosts run a hardened minimal Linux image built from CIS benchmarks and are replaced, not patched in place, at least every 30 days."
+  },
+  {
+   "id": "ev-backups",
+   "question": "Describe the frequency, location, and retention of your data backups.",
+   "section": "Business Continuity",
+   "answerable": true,
+   "gold_facts": [
+    "4 hours",
+    "35 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0015",
+    "A-0061",
+    "A-0089",
+    "pol-bcdr#1"
+   ],
+   "gold_answer": "Yes. Customer data is backed up every 4 hours. Backups are encrypted, stored in a second region, and retained for 35 days."
+  },
+  {
+   "id": "ev-rpo-rto",
+   "question": "What recovery point and recovery time objectives apply if a whole region fails?",
+   "section": "Business Continuity",
+   "answerable": true,
+   "gold_facts": [
+    "4 hours",
+    "8 hours"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0014",
+    "A-0038",
+    "A-0088",
+    "A-0124",
+    "pol-bcdr#2"
+   ],
+   "gold_answer": "Yes. The recovery point objective is 4 hours and the recovery time objective is 8 hours for a full region failure."
+  },
+  {
+   "id": "ev-dr-test",
+   "question": "Is the disaster recovery plan exercised in practice, and when was it last tested?",
+   "section": "Business Continuity",
+   "answerable": true,
+   "gold_facts": [
+    "12 months"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0086",
+    "A-0172",
+    "A-0276",
+    "pol-bcdr#3"
+   ],
+   "gold_answer": "Yes. The disaster recovery plan is tested every 12 months with a full regional failover exercise. The last test was completed on 2026-04-14."
+  },
+  {
+   "id": "ev-bcp",
+   "question": "What business continuity arrangements keep the company operating through a major disruption?",
+   "section": "Business Continuity",
+   "answerable": true,
+   "gold_facts": [
+    "business continuity plan"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0062",
+    "A-0077",
+    "A-0185",
+    "pol-bcdr#4"
+   ],
+   "gold_answer": "Yes. Corvane maintains a business continuity plan, reviewed every 12 months, that covers loss of offices, key staff, and critical vendors."
+  },
+  {
+   "id": "ev-uptime-history",
+   "question": "What availability did customers actually experience over the last year?",
+   "section": "Business Continuity",
+   "answerable": true,
+   "gold_facts": [
+    "99.97%"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0049",
+    "A-0129",
+    "A-0282",
+    "A-0308",
+    "prod-status#1"
+   ],
+   "gold_answer": "Yes. Measured availability over the last 12 months was 99.97%. Historical uptime is published on the public status page."
+  },
+  {
+   "id": "ev-breach-notification",
+   "question": "If our data is affected by a security breach, how soon will you notify us?",
+   "section": "Incident Response",
+   "answerable": true,
+   "gold_facts": [
+    "48 hours"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0020",
+    "A-0021",
+    "A-0033",
+    "A-0039",
+    "pol-incident-response#2"
+   ],
+   "gold_answer": "Yes. Corvane notifies affected customers of a confirmed security breach involving their data within 48 hours."
+  },
+  {
+   "id": "ev-breach-history",
+   "question": "Has customer data ever been exposed in a security breach of your systems?",
+   "section": "Incident Response",
+   "answerable": true,
+   "gold_facts": [
+    "5 years"
+   ],
+   "gold_compliance": "no",
+   "gold_sources": [
+    "A-0069",
+    "A-0139",
+    "A-0142",
+    "A-0240",
+    "pol-incident-response#3"
+   ],
+   "gold_answer": "No. Corvane has not had a security breach involving customer data in the last 5 years."
+  },
+  {
+   "id": "ev-forensics",
+   "question": "Who would carry out forensic investigation of a serious incident, and how is evidence preserved?",
+   "section": "Incident Response",
+   "answerable": true,
+   "gold_facts": [
+    "retainer"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0018",
+    "A-0078",
+    "A-0294",
+    "pol-incident-response#4"
+   ],
+   "gold_answer": "Yes. Corvane keeps an external incident response firm on retainer and preserves forensic evidence for at least 12 months after an incident."
+  },
+  {
+   "id": "ev-vuln-scanning",
+   "question": "How do you scan your software and infrastructure for known vulnerabilities?",
+   "section": "Vulnerability Management",
+   "answerable": true,
+   "gold_facts": [
+    "daily"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0134",
+    "A-0152",
+    "A-0177",
+    "pol-vuln-mgmt#2"
+   ],
+   "gold_answer": "Yes. Infrastructure and container images are scanned for vulnerabilities daily, and application dependencies are scanned on every build."
+  },
+  {
+   "id": "ev-patch-sla",
+   "question": "Once a critical vulnerability is found, how long until it is remediated?",
+   "section": "Vulnerability Management",
+   "answerable": true,
+   "gold_facts": [
+    "7 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0022",
+    "A-0029",
+    "A-0035",
+    "A-0211",
+    "pol-vuln-mgmt#3"
+   ],
+   "gold_answer": "Yes. Critical vulnerabilities are remediated within 7 days, high within 30 days, and medium within 90 days."
+  },
+  {
+   "id": "ev-bug-bounty",
+   "question": "Is there a way for outside researchers to report vulnerabilities, such as a bug bounty?",
+   "section": "Vulnerability Management",
+   "answerable": true,
+   "gold_facts": [
+    "bug bounty"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0057",
+    "A-0060",
+    "A-0292",
+    "pol-vuln-mgmt#4"
+   ],
+   "gold_answer": "Yes. Corvane runs a public vulnerability disclosure program and a private bug bounty program managed by an external platform."
+  },
+  {
+   "id": "ev-malware",
+   "question": "How do you protect employee laptops and uploaded files against malware?",
+   "section": "Vulnerability Management",
+   "answerable": true,
+   "gold_facts": [
+    "endpoint detection and response"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0202",
+    "A-0255",
+    "A-0298",
+    "pol-endpoint#1"
+   ],
+   "gold_answer": "Yes. All employee laptops run endpoint detection and response software, and files uploaded to the platform are scanned for malware."
+  },
+  {
+   "id": "ev-monitoring",
+   "question": "Who monitors security events in your environment, and at what hours?",
+   "section": "Logging",
+   "answerable": true,
+   "gold_facts": [
+    "24 hours a day"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0011",
+    "A-0064",
+    "A-0223",
+    "pol-logging#2"
+   ],
+   "gold_answer": "Yes. Security events are monitored 24 hours a day by an internal security operations team using a SIEM with automated alerting."
+  },
+  {
+   "id": "ev-subprocessors",
+   "question": "Which subprocessors handle our data, and how are new ones communicated?",
+   "section": "Vendor Management",
+   "answerable": true,
+   "gold_facts": [
+    "9 subprocessors",
+    "30 days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0017",
+    "A-0030",
+    "A-0219",
+    "legal-subprocessors#1"
+   ],
+   "gold_answer": "Yes. Corvane uses 9 subprocessors. The current list is published on the trust center, and customers are notified 30 days before a new subprocessor is added."
+  },
+  {
+   "id": "ev-vendor-risk",
+   "question": "How do you assess the security of the vendors who handle our data?",
+   "section": "Vendor Management",
+   "answerable": true,
+   "gold_facts": [
+    "before onboarding"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0076",
+    "A-0187",
+    "A-0267",
+    "A-0291",
+    "pol-vendor-mgmt#1"
+   ],
+   "gold_answer": "Yes. Vendors with access to customer data are assessed before onboarding and reviewed every 12 months, including a review of their SOC 2 or ISO 27001 report."
+  },
+  {
+   "id": "ev-offshore",
+   "question": "In which countries are staff located who might access our data?",
+   "section": "Vendor Management",
+   "answerable": true,
+   "gold_facts": [
+    "Portugal"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0067",
+    "A-0118",
+    "A-0147",
+    "A-0215",
+    "pol-privacy#3"
+   ],
+   "gold_answer": "Partial. Customer data is stored only in the selected region. Support staff in the US, UK, and Portugal may access data with customer permission."
+  },
+  {
+   "id": "ev-sla-uptime",
+   "question": "What uptime commitment is in the contract, and what service credits apply if it is missed?",
+   "section": "SLA & Support",
+   "answerable": true,
+   "gold_facts": [
+    "99.9%",
+    "99.95%"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0082",
+    "A-0201",
+    "A-0218",
+    "A-0262",
+    "legal-sla#1"
+   ],
+   "gold_answer": "Yes. Corvane commits to 99.9% monthly uptime for the Business plan and 99.95% for the Enterprise plan, with service credits of up to 25% of monthly fees."
+  },
+  {
+   "id": "ev-support-hours",
+   "question": "When is your support team available?",
+   "section": "SLA & Support",
+   "answerable": true,
+   "gold_facts": [
+    "24x7"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0122",
+    "A-0237",
+    "A-0303",
+    "prod-support#1"
+   ],
+   "gold_answer": "Yes. Standard support is available 9am to 6pm on business days. Enterprise customers get 24x7 support for Severity 1 issues."
+  },
+  {
+   "id": "ev-response-times",
+   "question": "If production is down for us, how fast will support respond to a Severity 1 issue?",
+   "section": "SLA & Support",
+   "answerable": true,
+   "gold_facts": [
+    "1 hour"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0006",
+    "A-0113",
+    "A-0144",
+    "A-0299",
+    "prod-support#2"
+   ],
+   "gold_answer": "Yes. Severity 1 issues receive a response within 1 hour for Enterprise customers and within 4 hours for Business customers."
+  },
+  {
+   "id": "ev-maintenance",
+   "question": "How much notice do we get before planned maintenance?",
+   "section": "SLA & Support",
+   "answerable": true,
+   "gold_facts": [
+    "5 business days"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0051",
+    "A-0074",
+    "A-0098",
+    "A-0130",
+    "legal-sla#2"
+   ],
+   "gold_answer": "Yes. Planned maintenance is announced at least 5 business days in advance and is scheduled on Sundays between 02:00 and 06:00 UTC. Most releases need no downtime."
+  },
+  {
+   "id": "ev-api",
+   "question": "Can our engineers automate the platform through an API, and how is it authenticated?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "OpenAPI 3.1"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0025",
+    "A-0040",
+    "A-0167",
+    "A-0257",
+    "prod-api#1"
+   ],
+   "gold_answer": "Yes. Corvane Insight provides a REST API documented with OpenAPI 3.1, authenticated with scoped API keys or OAuth 2.0 client credentials."
+  },
+  {
+   "id": "ev-api-rate-limits",
+   "question": "What request limits apply to the API?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "600 requests per minute"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0036",
+    "A-0128",
+    "A-0208",
+    "prod-api#2"
+   ],
+   "gold_answer": "Yes. The API allows 600 requests per minute per workspace on the Business plan and 3,000 requests per minute on the Enterprise plan."
+  },
+  {
+   "id": "ev-integrations",
+   "question": "Which data sources can we connect through connectors?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "40 data sources"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0193",
+    "A-0217",
+    "A-0246",
+    "A-0279",
+    "prod-connectors#1"
+   ],
+   "gold_answer": "Yes. Native connectors are available for 40 data sources, including cloud data warehouses, object storage, and relational databases."
+  },
+  {
+   "id": "ev-mobile",
+   "question": "Can field staff use the product from a mobile phone app?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "does not offer a native mobile app"
+   ],
+   "gold_compliance": "no",
+   "gold_sources": [
+    "A-0007",
+    "A-0141",
+    "A-0165",
+    "A-0192",
+    "prod-overview#1"
+   ],
+   "gold_answer": "No. Corvane Insight does not offer a native mobile app. The web application is responsive and supported on current mobile browsers."
+  },
+  {
+   "id": "ev-accessibility",
+   "question": "Is the interface accessible for employees who use assistive technology, for example under WCAG?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "WCAG 2.1 AA"
+   ],
+   "gold_compliance": "partial",
+   "gold_sources": [
+    "A-0081",
+    "A-0085",
+    "A-0104",
+    "A-0271",
+    "prod-accessibility#1"
+   ],
+   "gold_answer": "Partial. The web application targets WCAG 2.1 AA. A third-party audit in 2026 found 4 open issues, which are scheduled for remediation."
+  },
+  {
+   "id": "ev-ai-assistant",
+   "question": "Is generative AI built into the product, and can an administrator disable the AI assistant?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "off by default"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0046",
+    "A-0284",
+    "A-0304",
+    "pol-ai-use#2"
+   ],
+   "gold_answer": "Yes. The optional AI assistant answers questions about dashboards. It is off by default, an administrator must enable it, and prompts are not retained by the model provider."
+  },
+  {
+   "id": "ev-sandbox",
+   "question": "Is there a sandbox where our team can test configuration changes?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "sandbox"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0112",
+    "A-0119",
+    "A-0173",
+    "A-0287",
+    "prod-environments#1"
+   ],
+   "gold_answer": "Yes. Enterprise customers receive 1 non-production sandbox workspace for testing, refreshed on request."
+  },
+  {
+   "id": "ev-storage-limits",
+   "question": "How much storage is included in each plan?",
+   "section": "Product",
+   "answerable": true,
+   "gold_facts": [
+    "500 GB"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0106",
+    "A-0127",
+    "A-0136",
+    "A-0212",
+    "com-pricing#1"
+   ],
+   "gold_answer": "Yes. Workspaces on the Business plan include 500 GB of storage and Enterprise plans include 5 TB, with additional storage billed per TB."
+  },
+  {
+   "id": "ev-pricing-model",
+   "question": "Explain the pricing model and the plans available.",
+   "section": "Commercial",
+   "answerable": true,
+   "gold_facts": [
+    "per named user"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0137",
+    "A-0232",
+    "A-0258",
+    "com-pricing#2"
+   ],
+   "gold_answer": "Yes. Corvane Insight is priced per named user per year, with 3 plans: Team, Business, and Enterprise. Volume discounts start at 100 users."
+  },
+  {
+   "id": "ev-payment-terms",
+   "question": "When are we invoiced and what are the payment terms?",
+   "section": "Commercial",
+   "answerable": true,
+   "gold_facts": [
+    "net 30"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0045",
+    "A-0092",
+    "A-0162",
+    "A-0254",
+    "com-order-terms#1"
+   ],
+   "gold_answer": "Yes. Invoices are issued annually in advance and payment terms are net 30 days."
+  },
+  {
+   "id": "ev-price-increase",
+   "question": "What cap applies to price increases when we renew?",
+   "section": "Commercial",
+   "answerable": true,
+   "gold_facts": [
+    "5%"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0013",
+    "A-0023",
+    "A-0063",
+    "com-order-terms#2"
+   ],
+   "gold_answer": "Yes. Renewal price increases are capped at 5% per year for multi-year agreements."
+  },
+  {
+   "id": "ev-termination",
+   "question": "Under what terms can we terminate the agreement early?",
+   "section": "Commercial",
+   "answerable": true,
+   "gold_facts": [
+    "material breach"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0115",
+    "A-0191",
+    "A-0252",
+    "legal-msa#2"
+   ],
+   "gold_answer": "Yes. Either party may terminate for material breach with 30 days written notice if the breach is not cured, and prepaid fees are refunded pro rata when Corvane is in breach."
+  },
+  {
+   "id": "ev-trial",
+   "question": "Can we try the software in a free trial first?",
+   "section": "Commercial",
+   "answerable": true,
+   "gold_facts": [
+    "14 day"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0102",
+    "A-0105",
+    "A-0198",
+    "com-pricing#3"
+   ],
+   "gold_answer": "Yes. A 14 day free trial of the Business plan is available with sample data."
+  },
+  {
+   "id": "ev-background-checks",
+   "question": "Do new employees and contractors go through background checks?",
+   "section": "HR Security",
+   "answerable": true,
+   "gold_facts": [
+    "background check"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0003",
+    "A-0009",
+    "A-0024",
+    "A-0034",
+    "pol-hr-security#1"
+   ],
+   "gold_answer": "Yes. All employees and contractors pass a background check before they start, where local law allows."
+  },
+  {
+   "id": "ev-security-training",
+   "question": "How often does your workforce complete security awareness training?",
+   "section": "HR Security",
+   "answerable": true,
+   "gold_facts": [
+    "12 months"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0043",
+    "A-0114",
+    "A-0239",
+    "pol-hr-security#2"
+   ],
+   "gold_answer": "Yes. All staff complete security awareness training at hire and every 12 months, engineers complete secure coding training every 12 months, and phishing simulations run monthly."
+  },
+  {
+   "id": "ev-confidentiality",
+   "question": "Are your employees bound by confidentiality agreements to keep our information private?",
+   "section": "HR Security",
+   "answerable": true,
+   "gold_facts": [
+    "confidentiality agreements"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0056",
+    "A-0125",
+    "A-0230",
+    "pol-hr-security#3"
+   ],
+   "gold_answer": "Yes. All employees and contractors sign confidentiality agreements before they receive system access."
+  },
+  {
+   "id": "ev-code-review",
+   "question": "What code review and testing does new software go through before release?",
+   "section": "Secure Development",
+   "answerable": true,
+   "gold_facts": [
+    "second engineer"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0148",
+    "A-0186",
+    "A-0216",
+    "A-0297",
+    "pol-sdlc#2"
+   ],
+   "gold_answer": "Yes. Every code change requires review and approval by a second engineer, and automated tests and static analysis must pass before merge."
+  },
+  {
+   "id": "ev-change-mgmt",
+   "question": "How do you control and approve changes to the production environment?",
+   "section": "Secure Development",
+   "answerable": true,
+   "gold_facts": [
+    "rollback plan"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0138",
+    "A-0196",
+    "A-0281",
+    "A-0293",
+    "pol-change-mgmt#1"
+   ],
+   "gold_answer": "Yes. Production changes go through a change management process with peer review, automated deployment, and a rollback plan. Emergency changes are reviewed within 2 business days."
+  },
+  {
+   "id": "ev-sbom",
+   "question": "Can we get a software bill of materials for the components in your product?",
+   "section": "Secure Development",
+   "answerable": true,
+   "gold_facts": [
+    "CycloneDX"
+   ],
+   "gold_compliance": "yes",
+   "gold_sources": [
+    "A-0179",
+    "A-0180",
+    "A-0269",
+    "pol-sdlc#3"
+   ],
+   "gold_answer": "Yes. A software bill of materials is generated for every release in CycloneDX format and is available to Enterprise customers on request."
+  },
+  {
+   "id": "ev-unanswerable-0",
+   "question": "What is the coverage limit of your cyber liability insurance policy?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-1",
+   "question": "Do you hold FedRAMP Moderate authorization?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-2",
+   "question": "What percentage of annual revenue do you spend on information security?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-3",
+   "question": "Do you support quantum-resistant cryptography for data at rest?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-4",
+   "question": "Do you hold a CMMC Level 2 certification?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-5",
+   "question": "Describe your carbon emissions reporting for data center usage.",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-6",
+   "question": "How many customers in the aviation sector use your platform?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-7",
+   "question": "What is the annual turnover rate on your security team?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-8",
+   "question": "Is your company financially audited by a Big Four accounting firm?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  },
+  {
+   "id": "ev-unanswerable-9",
+   "question": "Do you support deployment inside our own air-gapped classified enclave with FIPS 140-3 validated modules?",
+   "section": "",
+   "answerable": false,
+   "gold_facts": [],
+   "gold_compliance": "unanswered",
+   "gold_sources": [],
+   "gold_answer": ""
+  }
+ ]
+}
